@@ -1,19 +1,22 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ChevronRight, ArrowRight, CheckCircle2, ShieldCheck, Heart, Zap, Waves, Users, X } from 'lucide-react';
 import StrategySection from '../components/StrategySection';
 import { HOMEPAGE_STRATEGY } from '../constants';
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col">
       {/* HERO SECTION */}
       <StrategySection {...HOMEPAGE_STRATEGY.hero}>
-        <div className="relative h-[85vh] flex items-center overflow-hidden bg-[#BBD6E4]">
+        <div className="relative h-[85vh] flex items-center overflow-hidden bg-[#A2C4D9]">
           {/* Background Image Overlay */}
           <div className="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#BBD6E4] via-[#BBD6E4]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#A2C4D9] via-[#A2C4D9]/80 to-transparent" />
           
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <motion.div 
@@ -33,12 +36,18 @@ export default function Home() {
                 Un enfoque tranquilo y basado en la evidencia para la mujer moderna. Recupera tu ligereza a través de la nutrición respaldada por la ciencia y el movimiento intencional.
               </p>
               <div className="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
-                <button className="px-8 py-5 bg-velora-accent text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-velora-text transition-all group shadow-lg shadow-velora-accent/20">
-                  Comienza tu Viaje
+                <button 
+                  onClick={() => navigate('/nutrition')}
+                  className="px-8 py-5 bg-velora-accent text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-velora-text transition-all group shadow-lg shadow-velora-accent/20"
+                >
+                  Ver Nutrición
                   <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
                 </button>
-                <button className="px-8 py-5 bg-white border border-velora-border rounded-xl font-bold hover:bg-velora-bg transition-all text-[14px]">
-                  Casos de Éxito
+                <button 
+                  onClick={() => navigate('/movement')}
+                  className="px-8 py-5 bg-white border border-velora-border rounded-xl font-bold hover:bg-velora-bg transition-all text-[14px]"
+                >
+                  Ver Movimiento
                 </button>
               </div>
               <div className="mt-12 flex items-center gap-4 opacity-70">
