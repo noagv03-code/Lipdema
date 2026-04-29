@@ -29,7 +29,7 @@ export default function Home() {
                 Plano de Bienestar • Etapas 1-3
               </div>
               <h1 className="text-6xl md:text-8xl font-display font-black text-velora-text mb-6 leading-[1.05] tracking-tight">
-                El Lipedema no es tu <span className="text-velora-accent">culpa.</span> <br/>
+                El Lipedema no es tu <span className="text-velora-blue-dark">culpa.</span> <br/>
                 <span className="italic font-serif font-normal text-velora-muted">Manejarlo</span> es tu poder.
               </h1>
               <p className="text-lg text-velora-muted mb-10 leading-relaxed max-w-lg font-medium">
@@ -40,14 +40,14 @@ export default function Home() {
                   onClick={() => navigate('/nutrition')}
                   className="px-8 py-5 bg-velora-accent text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-velora-text transition-all group shadow-lg shadow-velora-accent/20"
                 >
-                  Ver Nutrición
+                  Nutrición
                   <ArrowRight size={20} className="transform group-hover:translate-x-1 transition-transform" />
                 </button>
                 <button 
                   onClick={() => navigate('/movement')}
                   className="px-8 py-5 bg-white border border-velora-border rounded-xl font-bold hover:bg-velora-bg transition-all text-[14px]"
                 >
-                  Ver Movimiento
+                  Movimiento
                 </button>
               </div>
               <div className="mt-12 flex items-center gap-4 opacity-70">

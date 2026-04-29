@@ -25,9 +25,6 @@ export default function DailyPlans() {
             <p className="text-xl text-velora-muted mb-10 leading-relaxed font-medium">
               {DAILY_PLANS_STRATEGY.subheadline}
             </p>
-            <button className="bg-velora-accent text-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-velora-text transition-all shadow-xl hover:shadow-2xl hover:-translate-y-1">
-              {DAILY_PLANS_STRATEGY.cta}
-            </button>
           </motion.div>
         </div>
       </section>
