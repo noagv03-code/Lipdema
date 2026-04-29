@@ -55,10 +55,8 @@ export default function App() {
             </div>
             <div className="text-center md:text-right">
               <p className="mb-3">© 2026 VELORA WELLNESS. EMPODERANDO TU VIAJE.</p>
-              <div className="flex justify-center md:justify-end gap-8">
-                <span className="hover:text-velora-accent cursor-pointer transition-colors">Instagram</span>
-                <span className="hover:text-velora-accent cursor-pointer transition-colors">Comunidad</span>
-                <span className="hover:text-velora-accent cursor-pointer transition-colors">Recursos</span>
+              <div className="flex justify-center md:justify-end">
+                <span className="text-velora-accent font-bold">Made By Noa González</span>
               </div>
             </div>
           </div>
