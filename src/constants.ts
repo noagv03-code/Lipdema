@@ -1,5 +1,5 @@
 
-import { BrandFoundation, SectionContent } from './types';
+import { BrandFoundation, SectionContent, DailyPlan } from './types';
 
 export const BRAND: BrandFoundation = {
   name: "Velora Estilo de Vida Lipedema",
@@ -12,6 +12,127 @@ export const BRAND: BrandFoundation = {
     fears: ["Progresión a la Etapa 4", "Pérdida de movilidad", "Ser juzgada por 'elecciones de estilo de vida'"],
     desires: ["Ligereza en las extremidades", "Guía clara y accionable", "Una comunidad que 'lo entienda'"]
   }
+};
+
+export const DAILY_PLANS: DailyPlan[] = [
+  {
+    day: 1,
+    focus: "Antiinflamatorio",
+    breakfast: "Huevos con espinaca + aguacate",
+    lunch: "Salmón con espárragos",
+    dinner: "Pollo a la plancha con ensalada verde",
+    snack: "Nueces",
+    movement: "30 min caminata + 10 min rebounding",
+    benefit: "Reduce inflamación y mejora energía",
+    image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 2,
+    focus: "Ligero y Digestivo",
+    breakfast: "Yogur natural (si tolerado) + semillas",
+    lunch: "Merluza con verduras al vapor",
+    dinner: "Pavo con calabacín",
+    snack: "Pepino + aceite de oliva",
+    movement: "20 min caminata + movilidad",
+    benefit: "Ligereza y menor retención",
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 3,
+    focus: "Saciedad",
+    breakfast: "Huevos + aguacate",
+    lunch: "Ternera con brócoli",
+    dinner: "Sardinas con tomate",
+    snack: "Almendras",
+    movement: "Fuerza (piernas) + 20 min caminata",
+    benefit: "Mayor saciedad y control del hambre",
+    image: "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 4,
+    focus: "Circulación",
+    breakfast: "Huevos + espinaca",
+    lunch: "Perca con verduras",
+    dinner: "Pollo con ensalada",
+    snack: "Semillas",
+    movement: "Natación o bicicleta (30 min)",
+    benefit: "Mejora circulación",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 5,
+    focus: "Simple",
+    breakfast: "Huevos",
+    lunch: "Pollo + verduras",
+    dinner: "Pescado blanco + ensalada",
+    snack: "Nueces",
+    movement: "30–45 min caminata",
+    benefit: "Fácil de seguir",
+    image: "https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 6,
+    focus: "Energía",
+    breakfast: "Yogur + semillas",
+    lunch: "Salmón + verduras",
+    dinner: "Pavo + ensalada",
+    snack: "Huevo cocido",
+    movement: "Fuerza + caminata",
+    benefit: "Más energía sostenida",
+    image: "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 7,
+    focus: "Descarga",
+    breakfast: "Huevos + aguacate",
+    lunch: "Pescado blanco + verduras",
+    dinner: "Pollo ligero",
+    snack: "Pepino",
+    movement: "Caminata suave + estiramientos",
+    benefit: "Reduce pesadez",
+    image: "https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 8,
+    focus: "Variedad",
+    breakfast: "Huevos",
+    lunch: "Cerdo magro + verduras",
+    dinner: "Sardinas",
+    snack: "Nueces",
+    movement: "Rebounding + caminata",
+    benefit: "Evita monotonía",
+    image: "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 9,
+    focus: "Fuerza",
+    breakfast: "Huevos + aguacate",
+    lunch: "Ternera + verduras",
+    dinner: "Pollo",
+    snack: "Semillas",
+    movement: "Entrenamiento de fuerza completo",
+    benefit: "Apoyo muscular",
+    image: "https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 10,
+    focus: "Equilibrio",
+    breakfast: "Yogur + frutos secos",
+    lunch: "Salmón + ensalada",
+    dinner: "Pavo + verduras",
+    snack: "Almendras",
+    movement: "Caminata + movilidad",
+    benefit: "Balance general",
+    image: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80"
+  }
+];
+
+export const DAILY_PLANS_STRATEGY: SectionContent = {
+  headline: "Tu Plan Diario para Lipedema: Comida + Movimiento",
+  subheadline: "Sigue estos días como guía o inspírate para crear tu rutina.",
+  keyMessage: "Elige un día y síguelo completo. Puedes repetir tus favoritos. No busques perfección, busca consistencia.",
+  cta: "Descargar el Plan Completo",
+  visualDirection: "Combinación de platos reales + mujer caminando o haciendo ejercicio suave. Estética azul clara, limpia y calmante."
 };
 
 export const HOMEPAGE_STRATEGY: Record<string, SectionContent> = {

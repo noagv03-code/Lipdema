@@ -30,7 +30,7 @@ export default function Nutrition() {
         {/* FOOD GROUPS */}
         <div className="grid md:grid-cols-2 gap-10 mb-24">
           {NUTRITION_PHILOSOPHY.allowedFoods.map((group, i) => (
-            <div key={i} className="bg-white rounded-[40px] p-12 border border-velora-border hover:shadow-xl transition-all flex flex-col group">
+            <div key={i} className="bg-velora-blue-mid/40 rounded-[40px] p-12 border border-velora-border hover:shadow-xl transition-all flex flex-col group">
               <div className="flex items-center space-x-5 mb-10">
                 <div className="w-16 h-16 bg-velora-accent/10 rounded-2xl flex items-center justify-center text-velora-accent group-hover:bg-velora-accent group-hover:text-white transition-all shadow-inner">
                   {group.category.includes('Carnes') && <Beef size={28} />}

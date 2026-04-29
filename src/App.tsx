@@ -11,6 +11,7 @@ import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
 import Movement from './pages/Movement';
 import StrategyDashboard from './pages/StrategyDashboard';
+import DailyPlans from './pages/DailyPlans';
 import { motion, AnimatePresence } from 'motion/react';
 
 function PageTransition({ children }: { children: React.ReactNode }) {
@@ -41,13 +42,14 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/nutrition" element={<Nutrition />} />
               <Route path="/movement" element={<Movement />} />
+              <Route path="/daily-plans" element={<DailyPlans />} />
               <Route path="/strategy" element={<StrategyDashboard />} />
             </Routes>
           </PageTransition>
         </main>
         
-        <footer className="bg-velora-bg border-t border-velora-border py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[11px] tracking-wider uppercase font-semibold text-velora-muted">
+        <footer className="bg-velora-blue-dark border-t border-velora-blue-dark py-16 text-white/80">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[11px] tracking-wider uppercase font-semibold">
             <div className="flex gap-10 mb-6 md:mb-0">
               <span className="text-velora-accent font-bold">Espacio Seguro</span>
               <span>Basado en Evidencia</span>

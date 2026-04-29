@@ -19,3 +19,15 @@ export interface SectionContent {
   cta: string;
   visualDirection: string;
 }
+
+export interface DailyPlan {
+  day: number;
+  focus: string;
+  breakfast: string;
+  lunch: string;
+  dinner: string;
+  snack?: string;
+  movement: string;
+  benefit: string;
+  image: string;
+}

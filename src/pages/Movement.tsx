@@ -43,7 +43,7 @@ export default function Movement() {
         {/* DAILY RULES */}
         <div className="grid md:grid-cols-4 gap-8 mb-24">
           {MOVEMENT_PRINCIPLES.dailyRules.map((rule, i) => (
-            <div key={i} className="bg-white border border-velora-border p-8 rounded-[32px] shadow-sm hover:shadow-md transition-shadow">
+            <div key={i} className="bg-velora-blue-mid/60 border border-velora-border p-8 rounded-[32px] shadow-sm hover:shadow-md transition-shadow">
               <div className="text-velora-accent font-display font-black text-3xl mb-6 opacity-20">0{i + 1}</div>
               <h3 className="text-xl font-display font-bold mb-3 tracking-tight">{rule.title}</h3>
               <p className="text-sm text-velora-muted leading-relaxed font-medium">{rule.text}</p>
@@ -67,7 +67,7 @@ export default function Movement() {
           <div className="grid lg:grid-cols-5 gap-8">
             {MOVEMENT_PRINCIPLES.categories.map((cat, i) => (
               <div key={i} className="group cursor-default">
-                <div className="bg-white border border-velora-border rounded-[32px] p-8 h-full hover:bg-velora-accent-light/20 transition-all hover:-translate-y-2 shadow-sm">
+                <div className="bg-velora-blue-mid/40 border border-velora-border rounded-[32px] p-8 h-full hover:bg-velora-accent-light/40 transition-all hover:-translate-y-2 shadow-sm">
                   <div className="w-14 h-14 bg-velora-bg rounded-2xl flex items-center justify-center text-velora-accent mb-8 group-hover:scale-110 transition-transform shadow-inner">
                     {cat.name.includes('Caminar') && <Footprints size={28} />}
                     {cat.name.includes('Acuático') && <Waves size={28} />}

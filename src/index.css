@@ -6,7 +6,7 @@
   --font-display: "Outfit", sans-serif;
   --font-serif: "Playfair Display", serif;
   
-  --color-velora-bg: #F5F7FA;
+  --color-velora-bg: #E6F0F8;
   --color-velora-nav: #FFFFFF;
   --color-velora-text: #2E4A66;
   --color-velora-muted: #5D7E95;
@@ -15,6 +15,8 @@
   --color-velora-teal: #7ED6C2;
   --color-velora-beige: #F4EDE4;
   --color-velora-border: #E1E8F0;
+  --color-velora-blue-dark: #1A3044;
+  --color-velora-blue-mid: #EBF5FF;
 }
 
 @layer base {

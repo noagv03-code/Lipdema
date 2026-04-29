@@ -10,10 +10,10 @@ export default function Home() {
     <div className="flex flex-col">
       {/* HERO SECTION */}
       <StrategySection {...HOMEPAGE_STRATEGY.hero}>
-        <div className="relative h-[85vh] flex items-center overflow-hidden bg-velora-accent-light/40">
+        <div className="relative h-[85vh] flex items-center overflow-hidden bg-[#BBD6E4]">
           {/* Background Image Overlay */}
-          <div className="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-r from-velora-accent-light/80 via-velora-accent-light/40 to-transparent" />
+          <div className="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#BBD6E4] via-[#BBD6E4]/80 to-transparent" />
           
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <motion.div 
@@ -22,7 +22,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="max-w-2xl"
             >
-              <div className="inline-block px-4 py-1.5 bg-velora-accent/10 border border-velora-accent/20 rounded-full text-[10px] uppercase tracking-widest font-bold text-velora-text mb-6">
+              <div className="inline-block px-4 py-1.5 bg-velora-blue-dark border border-velora-blue-dark/20 rounded-full text-[10px] uppercase tracking-widest font-bold text-white mb-6 shadow-sm">
                 Plano de Bienestar • Etapas 1-3
               </div>
               <h1 className="text-6xl md:text-8xl font-display font-black text-velora-text mb-6 leading-[1.05] tracking-tight">
@@ -105,7 +105,7 @@ export default function Home() {
       </StrategySection>
 
       {/* SOLUTION / PILLARS */}
-      <div className="py-24 bg-velora-bg">
+      <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-20">
           <span className="text-velora-accent font-bold uppercase tracking-[0.3em] text-[10px]">El Plano Velora</span>
           <h2 className="text-5xl font-display font-black mt-4 tracking-tight">Pilares de <span className="italic font-serif font-normal">Ligereza</span></h2>
@@ -116,7 +116,7 @@ export default function Home() {
             { id: '02', icon: <Waves />, title: "Movimiento Suave", desc: "Rutinas diarias de bajo impacto que priorizan el drenaje y la movilidad sobre el sudor y el esfuerzo." },
             { id: '03', icon: <Users />, title: "Cuidado Experto", desc: "Un entorno de apoyo arraigado en la ciencia y la empatía, conectándote con los mejores especialistas." }
           ].map((item, i) => (
-            <div key={i} className="p-12 rounded-[32px] border border-velora-border bg-white hover:bg-velora-accent-light/30 transition-all group relative overflow-hidden shadow-sm">
+            <div key={i} className="p-12 rounded-[32px] border border-velora-border bg-velora-blue-mid/40 hover:bg-velora-accent-light transition-all group relative overflow-hidden shadow-sm">
               <span className="absolute -top-4 -right-2 text-velora-accent/10 font-display font-black text-9xl group-hover:text-velora-accent/20 transition-all">{item.id}</span>
               <div className="w-16 h-16 bg-velora-bg rounded-2xl flex items-center justify-center text-velora-accent mb-10 group-hover:bg-velora-accent group-hover:text-white transition-all shadow-inner">
                 {item.icon}
