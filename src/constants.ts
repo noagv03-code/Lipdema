@@ -127,12 +127,86 @@ export const NUTRITION_PHILOSOPHY = {
 };
 
 export const MOVEMENT_PRINCIPLES = {
-  title: "Movement as Medicine",
-  intro: "We don't train for punishment. We move for lymphatic flow, fascia health, and joy.",
-  activities: [
-    { name: "Daily Walking", frequency: "Daily", purpose: "Low-impact calf muscle pump activation." },
-    { name: "Water Sports", frequency: "2-3x / week", purpose: "Natural hydrostatic pressure for lymph drainage." },
-    { name: "Rebounding", frequency: "10 mins Daily", purpose: "The ultimate trampoline-based lymph flush." },
-    { name: "Light Strength", frequency: "2x / week", purpose: "Supporting joints and maintaining metabolic health." }
+  title: "Movement for Lightness",
+  intro: "Movement is for supporting the body, not punishing it. Focus on lymphatic flow, circulation, and reducing the 'heavy' feeling through sustainable, low-impact action.",
+  philosophy: [
+    "Supportive, not punishing",
+    "Focus on lymph flow & circulation",
+    "Reduce heaviness and pain",
+    "Consistency > intensity",
+    "Low-impact foundation",
+    "Strength without inflammation"
+  ],
+  dailyRules: [
+    { title: "Move Daily", text: "Even light movement counts. Never skip a day of flow." },
+    { title: "Avoid Stagnation", text: "Break up long sedentary periods every 60 minutes." },
+    { title: "The Holy Trinity", text: "Combine light cardio, functional strength, and mobility." },
+    { title: "Heed the Signal", text: "Listen to body signals. Pain is a stop sign, not a challenge." }
+  ],
+  categories: [
+    {
+      name: "Walking",
+      why: "Improves circulation and calf pump activation. Gentle on joints.",
+      how: "20–60 minutes daily. Flat or slight incline preferred.",
+      implementation: "Split into 2 x 20 min sessions if needed."
+    },
+    {
+      name: "Water Training",
+      why: "Hydrostatic pressure acts as a natural full-body compression suit.",
+      how: "Swimming laps, water aerobics, or aqua jogging.",
+      implementation: "2-3 times per week for maximum drainage."
+    },
+    {
+      name: "Functional Strength",
+      why: "Builds the 'muscle pump' that moves lymphatic fluid against gravity.",
+      how: "Resistance bands, bodyweight squats, glute bridges.",
+      implementation: "2–4 times per week. Focus on core and lower body."
+    },
+    {
+      name: "Rebounding",
+      why: "The vertical bounce opens and closes lymphatic valves rapidly.",
+      how: "Gentle health bounce (feet don't even need to leave the mat).",
+      implementation: "5\u201315 minutes daily. First thing in the morning."
+    },
+    {
+      name: "Low-Impact Cardio",
+      why: "Increases heart rate without the joint impact of running.",
+      how: "Cycling (outdoor or stationary bike) or Elliptical.",
+      implementation: "Perfect for active recovery days."
+    }
+  ],
+  toAvoid: [
+    "High-impact running",
+    "Jump-heavy HIIT workouts",
+    "Extreme endurance sessions",
+    "Lifting until total failure"
+  ],
+  routines: {
+    beginner: [
+      { day: "Mon", activity: "30 min walk + light strength" },
+      { day: "Tue", activity: "20 min walk + mobility" },
+      { day: "Wed", activity: "Swimming or cycling" },
+      { day: "Thu", activity: "Strength training" },
+      { day: "Fri", activity: "30\u201345 min walk" },
+      { day: "Sat", activity: "10 min Rebounding" },
+      { day: "Sun", activity: "Rest / Gentle stroll" }
+    ],
+    intermediate: [
+      { day: "Daily", activity: "Walking & 10m Rebounding" },
+      { day: "4x/wk", activity: "Targeted Strength Training" },
+      { day: "2x/wk", activity: "Water-based training" }
+    ]
+  },
+  microHabits: [
+    "10-minute walk after every main meal",
+    "5 minutes of rebounding before coffee",
+    "Take the stairs for one flight daily",
+    "5-minute bedtime lymphatic stretch"
+  ],
+  expectations: [
+    "Reduced daily leg heaviness",
+    "Improved morning energy levels",
+    "Better sleep through parasympathetic activation",
+    "Gradual toning without inflammation"
   ]
 };
