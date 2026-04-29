@@ -12,16 +12,6 @@ export interface BrandFoundation {
   };
 }
 
-export interface ProgramTier {
-  id: string;
-  name: string;
-  price: string;
-  description: string;
-  benefits: string[];
-  target: string;
-  cta: string;
-}
-
 export interface SectionContent {
   headline: string;
   subheadline: string;

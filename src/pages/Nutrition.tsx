@@ -94,13 +94,13 @@ export default function Nutrition() {
             <div className="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
               <AlertTriangle className="text-velora-accent" size={24} />
             </div>
-            <h2 className="text-4xl font-display font-bold tracking-tight">La Lista Inflamatoria</h2>
+            <h2 className="text-4xl font-display font-bold tracking-tight text-white">La Lista Inflamatoria</h2>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
             {NUTRITION_PHILOSOPHY.avoidFoods.map((food, i) => (
               <div key={i} className="flex items-center space-x-4 p-5 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-all">
                 <div className="w-2 h-2 bg-velora-accent rounded-full" />
-                <span className="text-sm font-bold uppercase tracking-widest opacity-80">{food}</span>
+                <span className="text-sm font-bold uppercase tracking-widest text-white">{food}</span>
               </div>
             ))}
           </div>

@@ -11,7 +11,6 @@ export default function Navigation() {
     { label: 'Inicio', path: '/' },
     { label: 'Nutrición', path: '/nutrition' },
     { label: 'Movimiento', path: '/movement' },
-    { label: 'Programas', path: '/programs' },
     { label: 'Guía de Estrategia', path: '/strategy', highlight: true }
   ];
 
@@ -28,7 +27,7 @@ export default function Navigation() {
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8 text-[11px] uppercase tracking-[0.2em] font-bold">
-            {links.filter(link => link.path !== '/programs').map((link) => (
+            {links.map((link) => (
               <NavLink
                 key={link.path}
                 to={link.path}

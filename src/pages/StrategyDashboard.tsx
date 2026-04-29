@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Target, Heart, Eye, PenTool, Layout, Search, TrendingUp, ShieldAlert } from 'lucide-react';
-import { BRAND, PROGRAMS } from '../constants';
+import { Target, Heart, Eye, PenTool, Search, TrendingUp } from 'lucide-react';
+import { BRAND } from '../constants';
 
 export default function StrategyDashboard() {
   return (
@@ -87,7 +87,7 @@ export default function StrategyDashboard() {
         </div>
 
         {/* VISUAL & COPY DIRECTION */}
-        <div className="grid md:grid-cols-3 gap-10 mb-10">
+        <div className="grid md:grid-cols-3 gap-10">
            <div className="bg-white border border-velora-border rounded-[40px] p-10 shadow-sm">
             <h3 className="text-[11px] font-black text-velora-accent uppercase tracking-[0.3em] mb-8 flex items-center">
               <PenTool size={16} className="mr-3" /> Voz y Tono
@@ -112,27 +112,6 @@ export default function StrategyDashboard() {
               Dominando términos como 'gestión de etapas de Lipedema', 'soporte de Lipedema basado en la confianza' y 'protocolos de estilo de vida linfático'.
             </p>
           </div>
-        </div>
-
-        {/* PRODUCT LADDER */}
-        <div className="bg-velora-text rounded-[56px] p-16 md:p-24 shadow-2xl text-white relative overflow-hidden">
-             <div className="absolute top-0 right-0 p-12 opacity-5 scale-150">
-              <Layout size={200} />
-            </div>
-            <h2 className="text-4xl font-display font-black mb-16 flex items-center space-x-5 relative z-10 tracking-tight">
-              <span>La Escalera de Transformación</span>
-            </h2>
-            <div className="grid md:grid-cols-4 gap-8 relative z-10">
-              {PROGRAMS.map((p, i) => (
-                <div key={p.id} className="p-8 bg-white/5 border border-white/10 rounded-3xl relative backdrop-blur-sm group hover:bg-white/10 transition-all">
-                  <span className="absolute -top-4 -left-4 w-10 h-10 bg-velora-accent rounded-xl flex items-center justify-center text-xs font-black text-white shadow-lg">{i+1}</span>
-                  <h4 className="font-black text-lg mb-3 tracking-tight">{p.name}</h4>
-                  <p className="text-[10px] text-velora-accent font-black uppercase tracking-[0.2em] mb-4">{p.target}</p>
-                  <p className="text-[13px] text-white/40 mb-6 leading-relaxed font-medium line-clamp-3 italic">{p.description}</p>
-                  <div className="text-velora-accent font-black text-lg tracking-tighter">{p.price}</div>
-                </div>
-              ))}
-            </div>
         </div>
       </div>
     </div>

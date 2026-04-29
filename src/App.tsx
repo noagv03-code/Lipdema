@@ -46,7 +46,7 @@ export default function App() {
           </PageTransition>
         </main>
         
-        <footer className="bg-white border-t border-velora-border py-16">
+        <footer className="bg-velora-bg border-t border-velora-border py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[11px] tracking-wider uppercase font-semibold text-velora-muted">
             <div className="flex gap-10 mb-6 md:mb-0">
               <span className="text-velora-accent font-bold">Espacio Seguro</span>

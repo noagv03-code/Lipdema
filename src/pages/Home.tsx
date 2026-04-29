@@ -10,10 +10,10 @@ export default function Home() {
     <div className="flex flex-col">
       {/* HERO SECTION */}
       <StrategySection {...HOMEPAGE_STRATEGY.hero}>
-        <div className="relative h-[85vh] flex items-center overflow-hidden bg-white">
+        <div className="relative h-[85vh] flex items-center overflow-hidden bg-velora-accent-light/40">
           {/* Background Image Overlay */}
-          <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/80 to-transparent" />
+          <div className="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-gradient-to-r from-velora-accent-light/80 via-velora-accent-light/40 to-transparent" />
           
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <motion.div 
@@ -56,7 +56,7 @@ export default function Home() {
 
       {/* PROBLEM AWARENESS */}
       <StrategySection {...HOMEPAGE_STRATEGY.problem}>
-        <div className="py-24 bg-white border-y border-velora-border">
+        <div className="py-24 bg-velora-bg border-y border-velora-border">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-20 items-center">
               <div>

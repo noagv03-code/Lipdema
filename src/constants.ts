@@ -1,5 +1,5 @@
 
-import { BrandFoundation, ProgramTier, SectionContent } from './types';
+import { BrandFoundation, SectionContent } from './types';
 
 export const BRAND: BrandFoundation = {
   name: "Velora Estilo de Vida Lipedema",
@@ -13,45 +13,6 @@ export const BRAND: BrandFoundation = {
     desires: ["Ligereza en las extremidades", "Guía clara y accionable", "Una comunidad que 'lo entienda'"]
   }
 };
-
-export const PROGRAMS: ProgramTier[] = [
-  {
-    id: "starter",
-    name: "Plan de Inicio Lipo-Flow",
-    price: "Gratis",
-    description: "Tus primeros 7 días de vida antiinflamatoria.",
-    benefits: ["Guía de Preparación de Comidas de 7 Días", "Rutina Diaria de Flujo Linfático", "Lista de Compras"],
-    target: "Mujeres que recién comienzan su viaje de descubrimiento.",
-    cta: "Descargar Guía Gratis"
-  },
-  {
-    id: "essentials",
-    name: "Esenciales del Estilo de Vida",
-    price: "$49",
-    description: "La biblioteca definitiva para vivir con Lipedema.",
-    benefits: ["Lista Maestra de Alimentos", "Manual de Movimiento Sostenible", "Guía de Suplementos"],
-    target: "La persona decidida lista para un cambio inmediato.",
-    cta: "Obtener los Esenciales"
-  },
-  {
-    id: "core",
-    name: "La Transformación Velora",
-    price: "$197",
-    description: "Nuestro programa intensivo signature de 12 semanas.",
-    benefits: ["12 Semanas de Planes de Comidas", "Biblioteca de Videos de Entrenamiento Progresivo", "Preguntas y Respuestas Grupales Semanales"],
-    target: "Mujeres que buscan una renovación completa de su vida.",
-    cta: "Unirse a la Transformación"
-  },
-  {
-    id: "premium",
-    name: "Coaching de Círculo Interno",
-    price: "$499/mes",
-    description: "Apoyo cercano para resultados rápidos y comunidad profunda.",
-    benefits: ["Llamadas de Estrategia 1 a 1", "Grupo de Soporte Privado", "Ajustes de Protocolo Personalizados"],
-    target: "Mujeres que quieren guía experta en cada paso.",
-    cta: "Solicitar Coaching"
-  }
-];
 
 export const HOMEPAGE_STRATEGY: Record<string, SectionContent> = {
   hero: {
