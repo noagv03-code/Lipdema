@@ -6,13 +6,15 @@
   --font-display: "Outfit", sans-serif;
   --font-serif: "Playfair Display", serif;
   
-  --color-velora-bg: #0A0D0C;
-  --color-velora-nav: #0D1210;
-  --color-velora-text: #E0E7E1;
-  --color-velora-muted: #8DA399;
-  --color-velora-accent: #C4A484; /* Warm Tan/Bronze */
-  --color-velora-sage: #8DA399;
-  --color-velora-border: rgba(255, 255, 255, 0.05);
+  --color-velora-bg: #F5F7FA;
+  --color-velora-nav: #FFFFFF;
+  --color-velora-text: #2E4A66;
+  --color-velora-muted: #5D7E95;
+  --color-velora-accent: #A7D8F5; /* Light Blue */
+  --color-velora-accent-light: #CFEFFF;
+  --color-velora-teal: #7ED6C2;
+  --color-velora-beige: #F4EDE4;
+  --color-velora-border: #E1E8F0;
 }
 
 @layer base {
@@ -21,7 +23,7 @@
   }
   
   h1, h2, h3, h4 {
-    @apply font-serif tracking-tight text-velora-text;
+    @apply font-display tracking-tight text-velora-text font-bold;
   }
 
   .text-muted {

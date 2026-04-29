@@ -8,11 +8,11 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = React.useState(false);
 
   const links = [
-    { label: 'Home', path: '/' },
-    { label: 'Nutrition', path: '/nutrition' },
-    { label: 'Movement', path: '/movement' },
-    { label: 'Programs', path: '/programs' },
-    { label: 'Strategy Guide', path: '/strategy', highlight: true }
+    { label: 'Inicio', path: '/' },
+    { label: 'Nutrición', path: '/nutrition' },
+    { label: 'Movimiento', path: '/movement' },
+    { label: 'Programas', path: '/programs' },
+    { label: 'Guía de Estrategia', path: '/strategy', highlight: true }
   ];
 
   return (
@@ -20,22 +20,22 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
           <NavLink to="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 bg-velora-sage rounded-full flex items-center justify-center transition-transform group-hover:rotate-12">
-              <div className="w-4 h-4 border-2 border-velora-bg rounded-full"></div>
+            <div className="w-10 h-10 bg-velora-accent rounded-xl flex items-center justify-center transition-all group-hover:rotate-6 shadow-sm">
+              <div className="w-5 h-5 border-2 border-white rounded-lg"></div>
             </div>
-            <span className="font-serif font-bold text-xl tracking-tight text-velora-accent">VELORA</span>
+            <span className="font-display font-black text-2xl tracking-tighter text-velora-text">VELORA</span>
           </NavLink>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8 text-[11px] uppercase tracking-[0.2em] font-medium">
-            {links.map((link) => (
+          <div className="hidden md:flex items-center gap-8 text-[11px] uppercase tracking-[0.2em] font-bold">
+            {links.filter(link => link.path !== '/programs').map((link) => (
               <NavLink
                 key={link.path}
                 to={link.path}
                 className={({ isActive }) => 
-                  `transition-colors hover:text-velora-accent ${
+                  `transition-all hover:text-velora-accent ${
                     isActive ? 'text-velora-accent' : 'text-velora-muted'
-                  } ${link.highlight ? 'bg-velora-accent text-velora-bg! px-6 py-2 rounded-full font-bold hover:bg-white' : ''}`
+                  } ${link.highlight ? 'bg-velora-accent text-white px-6 py-2.5 rounded-lg font-bold hover:bg-velora-text shadow-sm' : ''}`
                 }
               >
                 {link.label}

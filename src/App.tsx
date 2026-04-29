@@ -10,7 +10,6 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
 import Movement from './pages/Movement';
-import Programs from './pages/Programs';
 import StrategyDashboard from './pages/StrategyDashboard';
 import { motion, AnimatePresence } from 'motion/react';
 
@@ -42,25 +41,24 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/nutrition" element={<Nutrition />} />
               <Route path="/movement" element={<Movement />} />
-              <Route path="/programs" element={<Programs />} />
               <Route path="/strategy" element={<StrategyDashboard />} />
             </Routes>
           </PageTransition>
         </main>
         
-        <footer className="bg-velora-bg border-t border-white/5 py-12">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[10px] tracking-widest uppercase opacity-40 font-medium">
-            <div className="flex gap-8 mb-4 md:mb-0">
-              <span className="text-velora-accent font-bold">Science-Backed</span>
-              <span>Supportive</span>
-              <span>Empowering</span>
+        <footer className="bg-white border-t border-velora-border py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-[11px] tracking-wider uppercase font-semibold text-velora-muted">
+            <div className="flex gap-10 mb-6 md:mb-0">
+              <span className="text-velora-accent font-bold">Espacio Seguro</span>
+              <span>Basado en Evidencia</span>
+              <span>Soporte Tranquilo</span>
             </div>
             <div className="text-center md:text-right">
-              <p className="mb-2">© 2026 VELORA LIFESTYLE. NON-MEDICAL ADVICE.</p>
-              <div className="flex justify-center md:justify-end gap-6">
-                <span>Facebook</span>
-                <span>Instagram</span>
-                <span>Youtube</span>
+              <p className="mb-3">© 2026 VELORA WELLNESS. EMPODERANDO TU VIAJE.</p>
+              <div className="flex justify-center md:justify-end gap-8">
+                <span className="hover:text-velora-accent cursor-pointer transition-colors">Instagram</span>
+                <span className="hover:text-velora-accent cursor-pointer transition-colors">Comunidad</span>
+                <span className="hover:text-velora-accent cursor-pointer transition-colors">Recursos</span>
               </div>
             </div>
           </div>

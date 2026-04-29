@@ -2,211 +2,211 @@
 import { BrandFoundation, ProgramTier, SectionContent } from './types';
 
 export const BRAND: BrandFoundation = {
-  name: "Velora Lipedema Lifestyle",
-  mission: "To transform the Lipedema journey from a path of frustration to a lifestyle of vitality, providing science-backed nutrition and movement strategies that actually work.",
-  vision: "To become the global gold standard for non-surgical Lipedema management, empowering 1 million women to thrive in their bodies.",
-  values: ["Science-Backed", "Radical Support", "Sustainable Action", "Empowered Autonomy"],
-  audience: "Women aged 25-55 with Stage 1-3 Lipedema who are tired of generic weight loss advice and seek a specialized, holistic approach.",
+  name: "Velora Estilo de Vida Lipedema",
+  mission: "Transformar el viaje del Lipedema de un camino de frustración a un estilo de vida de vitalidad, proporcionando estrategias de nutrición y movimiento basadas en la ciencia que realmente funcionen.",
+  vision: "Convertirse en el estándar de oro global para el manejo del Lipedema no quirúrgico, empoderando a 1 millón de mujeres para prosperar en sus cuerpos.",
+  values: ["Basado en la Ciencia", "Apoyo Radical", "Acción Sostenible", "Autonomía Empoderada"],
+  audience: "Mujeres de 25 a 55 años en las Etapas 1-3 de Lipedema que están cansadas de los consejos genéricos de pérdida de peso y buscan un enfoque especializado y holístico.",
   emotionalDrivers: {
-    painPoints: ["Leg heaviness & pain", "Generic diets failing", "Medical gaslighting", "Clothing frustration"],
-    fears: ["Progression to Stage 4", "Loss of mobility", "Being judged for 'lifestyle choices'"],
-    desires: ["Lightness in limbs", "Clear, actionable guidance", "A community that 'gets it'"]
+    painPoints: ["Pesadez y dolor en las piernas", "Fallo de dietas genéricas", "Desconocimiento médico", "Frustración con la ropa"],
+    fears: ["Progresión a la Etapa 4", "Pérdida de movilidad", "Ser juzgada por 'elecciones de estilo de vida'"],
+    desires: ["Ligereza en las extremidades", "Guía clara y accionable", "Una comunidad que 'lo entienda'"]
   }
 };
 
 export const PROGRAMS: ProgramTier[] = [
   {
     id: "starter",
-    name: "The Lipo-Flow Starter Plan",
-    price: "Free",
-    description: "Your first 7 days of anti-inflammatory living.",
-    benefits: ["7-Day Meal Prep Guide", "Daily Lymph-Flow Routine", "Grocery List"],
-    target: "Women just starting their discovery journey.",
-    cta: "Download Free Guide"
+    name: "Plan de Inicio Lipo-Flow",
+    price: "Gratis",
+    description: "Tus primeros 7 días de vida antiinflamatoria.",
+    benefits: ["Guía de Preparación de Comidas de 7 Días", "Rutina Diaria de Flujo Linfático", "Lista de Compras"],
+    target: "Mujeres que recién comienzan su viaje de descubrimiento.",
+    cta: "Descargar Guía Gratis"
   },
   {
     id: "essentials",
-    name: "Lifestyle Essentials",
+    name: "Esenciales del Estilo de Vida",
     price: "$49",
-    description: "The definitive library for Lipedema-friendly living.",
-    benefits: ["Master Food List", "Sustainable Movement Handbook", "Supplements Guide"],
-    target: "The self-starter ready for immediate change.",
-    cta: "Get the Essentials"
+    description: "La biblioteca definitiva para vivir con Lipedema.",
+    benefits: ["Lista Maestra de Alimentos", "Manual de Movimiento Sostenible", "Guía de Suplementos"],
+    target: "La persona decidida lista para un cambio inmediato.",
+    cta: "Obtener los Esenciales"
   },
   {
     id: "core",
-    name: "The Velora Transformation",
+    name: "La Transformación Velora",
     price: "$197",
-    description: "Our signature 12-week intensive program.",
-    benefits: ["12 Weeks of Meal Plans", "Progressive Workout Video Library", "Weekly Group Q&A"],
-    target: "Women looking for a complete life overhaul.",
-    cta: "Join the Transformation"
+    description: "Nuestro programa intensivo signature de 12 semanas.",
+    benefits: ["12 Semanas de Planes de Comidas", "Biblioteca de Videos de Entrenamiento Progresivo", "Preguntas y Respuestas Grupales Semanales"],
+    target: "Mujeres que buscan una renovación completa de su vida.",
+    cta: "Unirse a la Transformación"
   },
   {
     id: "premium",
-    name: "Inner Circle Coaching",
-    price: "$499/mo",
-    description: "High-touch support for rapid results and deep community.",
-    benefits: ["1-on-1 Strategy Calls", "Private Support Group", "Personalized Protocol Adjustments"],
-    target: "Women who want expert guidance at every step.",
-    cta: "Apply for Coaching"
+    name: "Coaching de Círculo Interno",
+    price: "$499/mes",
+    description: "Apoyo cercano para resultados rápidos y comunidad profunda.",
+    benefits: ["Llamadas de Estrategia 1 a 1", "Grupo de Soporte Privado", "Ajustes de Protocolo Personalizados"],
+    target: "Mujeres que quieren guía experta en cada paso.",
+    cta: "Solicitar Coaching"
   }
 ];
 
 export const HOMEPAGE_STRATEGY: Record<string, SectionContent> = {
   hero: {
-    headline: "Reclaim Your Lightness.",
-    subheadline: "The Holistic Lifestyle Brand for Women with Lipedema.",
-    keyMessage: "Stop fighting your body and start flowing with it. Specialized nutrition and movement designed for your unique condition.",
-    cta: "Start Your Journey",
-    visualDirection: "Real, authentic woman in sunlight, soft movement, feeling light and empowered."
+    headline: "Recupera tu Ligereza.",
+    subheadline: "La marca de estilo de vida holístico para mujeres con Lipedema.",
+    keyMessage: "Deja de luchar contra tu cuerpo y empieza a fluir con él. Nutrición y movimiento especializados diseñados para tu condición única.",
+    cta: "Comienza tu Viaje",
+    visualDirection: "Mujer real y auténtica bajo la luz del sol, movimiento suave, sintiéndose ligera y empoderada."
   },
   problem: {
-    headline: "Tired of advice that doesn't fit?",
-    subheadline: "Lipedema isn't about 'eating less and moving more.'",
-    keyMessage: "Validate the frustration of generic medical advice. We know why those 'traditional' diets haven't worked for you.",
-    cta: "Watch the Masterclass",
-    visualDirection: "Subtle, emotive imagery of heavy legs or 'normal' weight loss results that don't apply."
+    headline: "¿Cansada de consejos que no encajan?",
+    subheadline: "El Lipedema no se trata de 'comer menos y moverse más'.",
+    keyMessage: "Validar la frustración de los consejos médicos genéricos. Sabemos por qué esas dietas 'tradicionales' no han funcionado para ti.",
+    cta: "Ver la Masterclass",
+    visualDirection: "Imágenes sutiles y emotivas de piernas pesadas o resultados de pérdida de peso 'normales' que no se aplican."
   }
 };
 
 export const NUTRITION_PHILOSOPHY = {
-  title: "Eat for Inflammation Control",
-  intro: "Our approach focuses on reducing lymphatic load, supporting hormonal balance, and calming systemic inflammation through an intentional, protein-rich foundation.",
+  title: "Comer para el Control de la Inflamación",
+  intro: "Nuestro enfoque se centra en reducir la carga linfática, apoyar el equilibrio hormonal y calmar la inflamación sistémica a través de una base intencional y rica en proteínas.",
   principles: [
-    "Anti-inflammatory approach",
-    "Supports hormonal balance & lymphatic health",
-    "Focus on whole, unprocessed foods",
-    "Structured and intentional, not restrictive"
+    "Enfoque antiinflamatorio",
+    "Apoya el equilibrio hormonal y la salud linfática",
+    "Enfoque en alimentos integrales y no procesados",
+    "Estructurado e intencional, no restrictivo"
   ],
   allowedFoods: [
     { 
-      category: "Meats (High-Quality Protein)", 
+      category: "Carnes (Proteína de Alta Calidad)", 
       subcategories: [
-        { name: "Red Meat (Grass-fed)", items: ["Beef", "Lamb", "Lean Pork"] },
-        { name: "Poultry", items: ["Chicken Breast", "Chicken Thighs", "Turkey"] },
-        { name: "Organ Meats", items: ["Liver (Beef/Chicken)", "Heart"] }
+        { name: "Carne Roja (Alimentada con pasto)", items: ["Ternera", "Cordero", "Cerdo Magro"] },
+        { name: "Aves", items: ["Pechuga de Pollo", "Muslos de Pollo", "Pavo"] },
+        { name: "Vísceras", items: ["Hígado (Ternera/Pollo)", "Corazón"] }
       ],
-      benefits: "Supports muscle mass, metabolism, and satiety while stabilizing blood sugar.",
-      guidelines: "Prefer minimally processed. Avoid sausages or deli meats with additives. Grill, bake, or slow-cook."
+      benefits: "Apoya la masa muscular, el metabolismo y la saciedad mientras estabiliza el azúcar en la sangre.",
+      guidelines: "Preferir mínimamente procesado. Evitar embutidos con aditivos. Cocinar a la parrilla, al horno o a fuego lento."
     },
     { 
-      category: "Fish & Seafood (The Priority)", 
+      category: "Pescados y Mariscos (La Prioridad)", 
       subcategories: [
-        { name: "Fatty Fish (Priority)", items: ["Salmon", "Sardines", "Mackerel", "Anchovies"] },
-        { name: "Lean Fish", items: ["Cod", "Hake", "Perch", "Tilapia"] },
-        { name: "Seafood", items: ["Shrimp", "Mussels", "Clams", "Squid"] }
+        { name: "Pescado Azul (Prioridad)", items: ["Salmón", "Sardinas", "Caballa", "Anchoas"] },
+        { name: "Pescado Blanco", items: ["Bacalao", "Merluza", "Perca", "Tilapia"] },
+        { name: "Mariscos", items: ["Camarones", "Mejillones", "Almejas", "Calamar"] }
       ],
-      benefits: "Rich in Omega-3 to actively reduce inflammation and support the lymphatic system.",
-      guidelines: "Aim for 3–5 servings per week. Fresh or frozen is preferred over processed versions."
+      benefits: "Rico en Omega-3 para reducir activamente la inflamación y apoyar el sistema linfático.",
+      guidelines: "Apuntar a 3–5 porciones por semana. Se prefiere fresco o congelado sobre versiones procesadas."
     },
     { 
-      category: "Healthy Fats", 
-      items: ["Extra Virgin Olive Oil", "Avocado", "Almonds & Walnuts", "Chia & Flax Seeds"], 
-      benefits: "Essential for hormone health and promoting lymphatic flow." 
+      category: "Grasas Saludables", 
+      items: ["Aceite de Oliva Virgen Extra", "Aguacate", "Almendras y Nueces", "Semillas de Chía y Lino"], 
+      benefits: "Esencial para la salud hormonal y la promoción del flujo linfático." 
     },
     { 
-      category: "Anti-Inflammatory Veg", 
-      items: ["Leafy Greens (Spinach, Kale)", "Cruciferous (Broccoli, Cabbage)", "Zucchini", "Asparagus"], 
-      benefits: "The micronutrient base that fights oxidative stress." 
+      category: "Vegetales Antiinflamatorios", 
+      items: ["Verduras de Hoja Verde (Espinacas, Kale)", "Crucíferas (Brócoli, Col)", "Calabacín", "Espárragos"], 
+      benefits: "La base de micronutrientes que combate el estrés oxidativo." 
     }
   ],
   avoidFoods: [
-    "Ultra-processed foods", 
-    "Refined sugar & syrups", 
-    "Industrial seed oils (Soy, Corn)", 
-    "Refined carbohydrates", 
-    "Excess dairy (if inflammatory)"
+    "Alimentos ultraprocesados", 
+    "Azúcar refinado y jarabes", 
+    "Aceites vegetales industriales (Soja, Maíz)", 
+    "Carbohidratos refinados", 
+    "Exceso de lácteos (si son inflamatorios)"
   ],
   sampleMeals: [
-    { time: "Breakfast", options: ["Eggs with spinach + avocado", "High-fat yogurt with nuts & seeds"] },
-    { time: "Lunch", options: ["Grilled chicken + olive oil salad", "Salmon + roasted seasonal vegetables"] },
-    { time: "Dinner", options: ["Beef/Pork with sautéed greens", "White fish (Cod/Perch) + asparagus"] },
-    { time: "Snacks", options: ["Boiled eggs", "Handful of walnuts", "Tinned sardines"] }
+    { time: "Desayuno", options: ["Huevos con espinacas + aguacate", "Yogur alto en grasa con nueces y semillas"] },
+    { time: "Almuerzo", options: ["Pollo a la parrilla + ensalada de aceite de oliva", "Salmón + vegetales de temporada asados"] },
+    { time: "Cena", options: ["Ternera/Cerdo con verduras salteadas", "Pescado blanco (Bacalao/Perca) + espárragos"] },
+    { time: "Snacks", options: ["Huevos cocidos", "Puñado de nueces", "Sardinas en conserva"] }
   ]
 };
 
 export const MOVEMENT_PRINCIPLES = {
-  title: "Movement for Lightness",
-  intro: "Movement is for supporting the body, not punishing it. Focus on lymphatic flow, circulation, and reducing the 'heavy' feeling through sustainable, low-impact action.",
+  title: "Movimiento para la Ligereza",
+  intro: "El movimiento es para apoyar al cuerpo, no para castigarlo. Enfócate en el flujo linfático, la circulación y la reducción de la sensación de 'pesadez' a través de acciones sostenibles y de bajo impacto.",
   philosophy: [
-    "Supportive, not punishing",
-    "Focus on lymph flow & circulation",
-    "Reduce heaviness and pain",
-    "Consistency > intensity",
-    "Low-impact foundation",
-    "Strength without inflammation"
+    "De apoyo, no castigo",
+    "Enfoque en el flujo linfático y la circulación",
+    "Reducir pesadez y dolor",
+    "Consistencia > intensidad",
+    "Base de bajo impacto",
+    "Fuerza sin inflamación"
   ],
   dailyRules: [
-    { title: "Move Daily", text: "Even light movement counts. Never skip a day of flow." },
-    { title: "Avoid Stagnation", text: "Break up long sedentary periods every 60 minutes." },
-    { title: "The Holy Trinity", text: "Combine light cardio, functional strength, and mobility." },
-    { title: "Heed the Signal", text: "Listen to body signals. Pain is a stop sign, not a challenge." }
+    { title: "Muévete Diariamente", text: "Incluso el movimiento ligero cuenta. Nunca te saltes un día de flujo." },
+    { title: "Evita el Sedentarismo", text: "Rompe los largos periodos de inactividad cada 60 minutos." },
+    { title: "La Santísima Trinidad", text: "Combina cardio ligero, fuerza funcional y movilidad." },
+    { title: "Escucha la Señal", text: "Escucha las señales del cuerpo. El dolor es una señal de stop, no un desafío." }
   ],
   categories: [
     {
-      name: "Walking",
-      why: "Improves circulation and calf pump activation. Gentle on joints.",
-      how: "20–60 minutes daily. Flat or slight incline preferred.",
-      implementation: "Split into 2 x 20 min sessions if needed."
+      name: "Caminar",
+      why: "Mejora la circulación y la activación de la bomba de la pantorrilla. Suave con las articulaciones.",
+      how: "20–60 minutos diarios. Se prefiere terreno plano o ligera inclinación.",
+      implementation: "Dividir en 2 sesiones de 20 min si es necesario."
     },
     {
-      name: "Water Training",
-      why: "Hydrostatic pressure acts as a natural full-body compression suit.",
-      how: "Swimming laps, water aerobics, or aqua jogging.",
-      implementation: "2-3 times per week for maximum drainage."
+      name: "Entrenamiento Acuático",
+      why: "La presión hidrostática actúa como un traje de compresión natural para todo el cuerpo.",
+      how: "Nadar largos, aeróbic acuático o aqua jogging.",
+      implementation: "2-3 veces por semana para un drenaje máximo."
     },
     {
-      name: "Functional Strength",
-      why: "Builds the 'muscle pump' that moves lymphatic fluid against gravity.",
-      how: "Resistance bands, bodyweight squats, glute bridges.",
-      implementation: "2–4 times per week. Focus on core and lower body."
+      name: "Fuerza Funcional",
+      why: "Construye la 'bomba muscular' que mueve el fluido linfático contra la gravedad.",
+      how: "Bandas de resistencia, sentadillas con peso corporal, puentes de glúteo.",
+      implementation: "2–4 veces por semana. Enfoque en core y parte inferior del cuerpo."
     },
     {
-      name: "Rebounding",
-      why: "The vertical bounce opens and closes lymphatic valves rapidly.",
-      how: "Gentle health bounce (feet don't even need to leave the mat).",
-      implementation: "5\u201315 minutes daily. First thing in the morning."
+      name: "Rebounding (Rebote)",
+      why: "El rebote vertical abre y cierra las válvulas linfáticas rápidamente.",
+      how: "Salto de salud suave (los pies ni siquiera necesitan dejar la alfombra).",
+      implementation: "5\u201315 minutos diarios. A primera hora de la mañana."
     },
     {
-      name: "Low-Impact Cardio",
-      why: "Increases heart rate without the joint impact of running.",
-      how: "Cycling (outdoor or stationary bike) or Elliptical.",
-      implementation: "Perfect for active recovery days."
+      name: "Cardio de Bajo Impacto",
+      why: "Aumenta el ritmo cardíaco sin el impacto articular de correr.",
+      how: "Ciclismo (bicicleta al aire libre o estática) o elíptica.",
+      implementation: "Perfecto para días de recuperación activa."
     }
   ],
   toAvoid: [
-    "High-impact running",
-    "Jump-heavy HIIT workouts",
-    "Extreme endurance sessions",
-    "Lifting until total failure"
+    "Correr de alto impacto",
+    "Entrenamientos HIIT con muchos saltos",
+    "Sesiones de resistencia extrema",
+    "Levantamiento de pesas hasta el fallo total"
   ],
   routines: {
     beginner: [
-      { day: "Mon", activity: "30 min walk + light strength" },
-      { day: "Tue", activity: "20 min walk + mobility" },
-      { day: "Wed", activity: "Swimming or cycling" },
-      { day: "Thu", activity: "Strength training" },
-      { day: "Fri", activity: "30\u201345 min walk" },
-      { day: "Sat", activity: "10 min Rebounding" },
-      { day: "Sun", activity: "Rest / Gentle stroll" }
+      { day: "Lun", activity: "30 min caminata + fuerza ligera" },
+      { day: "Mar", activity: "20 min caminata + movilidad" },
+      { day: "Mié", activity: "Natación o ciclismo" },
+      { day: "Jue", activity: "Entrenamiento de fuerza" },
+      { day: "Vie", activity: "30\u201345 min caminata" },
+      { day: "Sáb", activity: "10 min Rebounding" },
+      { day: "Dom", activity: "Descanso / Paseo suave" }
     ],
     intermediate: [
-      { day: "Daily", activity: "Walking & 10m Rebounding" },
-      { day: "4x/wk", activity: "Targeted Strength Training" },
-      { day: "2x/wk", activity: "Water-based training" }
+      { day: "Diario", activity: "Caminata y 10m Rebounding" },
+      { day: "4x/sem", activity: "Entrenamiento de Fuerza Dirigido" },
+      { day: "2x/sem", activity: "Entrenamiento Acuático" }
     ]
   },
   microHabits: [
-    "10-minute walk after every main meal",
-    "5 minutes of rebounding before coffee",
-    "Take the stairs for one flight daily",
-    "5-minute bedtime lymphatic stretch"
+    "Caminata de 10 minutos después de cada comida principal",
+    "5 minutos de rebote antes del café",
+    "Subir las escaleras por un piso diariamente",
+    "Estiramiento linfático de 5 minutos antes de dormir"
   ],
   expectations: [
-    "Reduced daily leg heaviness",
-    "Improved morning energy levels",
-    "Better sleep through parasympathetic activation",
-    "Gradual toning without inflammation"
+    "Reducción de la pesadez diaria en las piernas",
+    "Mejora de los niveles de energía matutinos",
+    "Mejor sueño a través de la activación parasimpática",
+    "Tonificación gradual sin inflamación"
   ]
 };
