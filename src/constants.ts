@@ -72,14 +72,58 @@ export const HOMEPAGE_STRATEGY: Record<string, SectionContent> = {
 
 export const NUTRITION_PHILOSOPHY = {
   title: "Eat for Inflammation Control",
-  intro: "Our approach focuses on reducing lymphatic load and systemic inflammation through high-quality proteins and anti-inflammatory fats.",
-  allowedFoods: [
-    { category: "Meats", items: ["Grass-fed Beef", "Pasture-raised Poultry", "Organic Pork"], benefits: "High satiety, essential amino acids for tissue repair." },
-    { category: "Fish", items: ["Wild-caught Salmon", "Sardines", "Mackerel"], benefits: "Rich in Omega-3 to actively reduce inflammation." },
-    { category: "Healthy Fats", items: ["Avocados", "Extra Virgin Olive Oil", "Ghee"], benefits: "Promotes lymph flow and hormone health." },
-    { category: "Anti-Inflammatory Veg", items: ["Leafy Greens", "Cruciferous Veg", "Berries"], benefits: "Rich in phytonutrients and low glycemic impact." }
+  intro: "Our approach focuses on reducing lymphatic load, supporting hormonal balance, and calming systemic inflammation through an intentional, protein-rich foundation.",
+  principles: [
+    "Anti-inflammatory approach",
+    "Supports hormonal balance & lymphatic health",
+    "Focus on whole, unprocessed foods",
+    "Structured and intentional, not restrictive"
   ],
-  avoidFoods: ["Refined Sugars", "Seed Oils (Soy, Corn)", "Processed Carbs", "Excessive Alcohol"]
+  allowedFoods: [
+    { 
+      category: "Meats (High-Quality Protein)", 
+      subcategories: [
+        { name: "Red Meat (Grass-fed)", items: ["Beef", "Lamb", "Lean Pork"] },
+        { name: "Poultry", items: ["Chicken Breast", "Chicken Thighs", "Turkey"] },
+        { name: "Organ Meats", items: ["Liver (Beef/Chicken)", "Heart"] }
+      ],
+      benefits: "Supports muscle mass, metabolism, and satiety while stabilizing blood sugar.",
+      guidelines: "Prefer minimally processed. Avoid sausages or deli meats with additives. Grill, bake, or slow-cook."
+    },
+    { 
+      category: "Fish & Seafood (The Priority)", 
+      subcategories: [
+        { name: "Fatty Fish (Priority)", items: ["Salmon", "Sardines", "Mackerel", "Anchovies"] },
+        { name: "Lean Fish", items: ["Cod", "Hake", "Perch", "Tilapia"] },
+        { name: "Seafood", items: ["Shrimp", "Mussels", "Clams", "Squid"] }
+      ],
+      benefits: "Rich in Omega-3 to actively reduce inflammation and support the lymphatic system.",
+      guidelines: "Aim for 3–5 servings per week. Fresh or frozen is preferred over processed versions."
+    },
+    { 
+      category: "Healthy Fats", 
+      items: ["Extra Virgin Olive Oil", "Avocado", "Almonds & Walnuts", "Chia & Flax Seeds"], 
+      benefits: "Essential for hormone health and promoting lymphatic flow." 
+    },
+    { 
+      category: "Anti-Inflammatory Veg", 
+      items: ["Leafy Greens (Spinach, Kale)", "Cruciferous (Broccoli, Cabbage)", "Zucchini", "Asparagus"], 
+      benefits: "The micronutrient base that fights oxidative stress." 
+    }
+  ],
+  avoidFoods: [
+    "Ultra-processed foods", 
+    "Refined sugar & syrups", 
+    "Industrial seed oils (Soy, Corn)", 
+    "Refined carbohydrates", 
+    "Excess dairy (if inflammatory)"
+  ],
+  sampleMeals: [
+    { time: "Breakfast", options: ["Eggs with spinach + avocado", "High-fat yogurt with nuts & seeds"] },
+    { time: "Lunch", options: ["Grilled chicken + olive oil salad", "Salmon + roasted seasonal vegetables"] },
+    { time: "Dinner", options: ["Beef/Pork with sautéed greens", "White fish (Cod/Perch) + asparagus"] },
+    { time: "Snacks", options: ["Boiled eggs", "Handful of walnuts", "Tinned sardines"] }
+  ]
 };
 
 export const MOVEMENT_PRINCIPLES = {
