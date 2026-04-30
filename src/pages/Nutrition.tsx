@@ -30,9 +30,9 @@ export default function Nutrition() {
         {/* FOOD GROUPS */}
         <div className="grid md:grid-cols-2 gap-10 mb-24">
           {NUTRITION_PHILOSOPHY.allowedFoods.map((group, i) => (
-            <div key={i} className="bg-velora-blue-mid/40 rounded-[40px] p-12 border border-velora-border hover:shadow-xl transition-all flex flex-col group">
+            <div key={i} className="bg-white rounded-[40px] p-12 border border-velora-border hover:shadow-2xl transition-all flex flex-col group shadow-sm">
               <div className="flex items-center space-x-5 mb-10">
-                <div className="w-16 h-16 bg-velora-accent/10 rounded-2xl flex items-center justify-center text-velora-accent group-hover:bg-velora-accent group-hover:text-white transition-all shadow-inner">
+                <div className="w-16 h-16 bg-velora-bg rounded-2xl flex items-center justify-center text-velora-accent group-hover:bg-velora-accent group-hover:text-white transition-all shadow-inner">
                   {group.category.includes('Carnes') && <Beef size={28} />}
                   {group.category.includes('Pescado') && <Fish size={28} />}
                   {group.category.includes('Grasas') && <Coffee size={28} />}
@@ -68,14 +68,14 @@ export default function Nutrition() {
               </div>
 
               <div className="mt-12 pt-10 border-t border-velora-border space-y-6">
-                <div>
+                <div className="bg-velora-bg/30 p-6 rounded-3xl border border-velora-border/50">
                   <p className="text-[10px] font-black text-velora-accent uppercase tracking-[0.2em] mb-2 flex items-center">
                     <Target size={14} className="mr-2" /> Propósito Principal
                   </p>
-                  <p className="text-velora-muted font-medium text-sm leading-relaxed">{group.benefits}</p>
+                  <p className="text-velora-muted font-medium text-[13px] leading-relaxed">{group.benefits}</p>
                 </div>
                 {group.guidelines && (
-                  <div>
+                  <div className="px-2">
                     <p className="text-[10px] font-black text-velora-muted uppercase tracking-[0.2em] mb-2">Consejo Práctico</p>
                     <p className="text-velora-text/60 italic text-xs leading-relaxed font-serif">{group.guidelines}</p>
                   </div>
@@ -107,7 +107,7 @@ export default function Nutrition() {
         </div>
 
         {/* DAILY MEAL STRUCTURE */}
-        <div className="bg-velora-accent rounded-[56px] p-16 md:p-24 text-velora-text shadow-xl relative overflow-hidden">
+        <div className="bg-velora-accent rounded-[56px] p-16 md:p-24 text-white shadow-xl relative overflow-hidden">
           <div className="absolute bottom-0 right-0 p-12 opacity-10">
              <Leaf size={300} />
           </div>
@@ -117,8 +117,8 @@ export default function Nutrition() {
               <div className="space-y-12">
                 {NUTRITION_PHILOSOPHY.sampleMeals.slice(0, 2).map((step, i) => (
                   <div key={i} className="space-y-6">
-                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-velora-text/40 flex items-center">
-                      <span className="w-10 h-px bg-velora-text/20 mr-4"></span>
+                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-white/60 flex items-center">
+                      <span className="w-10 h-px bg-white/20 mr-4"></span>
                       Amanecer - {step.time}
                     </span>
                     <div className="space-y-4 pl-14">
@@ -132,8 +132,8 @@ export default function Nutrition() {
               <div className="space-y-12">
                 {NUTRITION_PHILOSOPHY.sampleMeals.slice(2).map((step, i) => (
                   <div key={i} className="space-y-6">
-                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-velora-text/40 flex items-center">
-                      <span className="w-10 h-px bg-velora-text/20 mr-4"></span>
+                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-white/60 flex items-center">
+                      <span className="w-10 h-px bg-white/20 mr-4"></span>
                       Atardecer - {step.time}
                     </span>
                     <div className="space-y-4 pl-14">

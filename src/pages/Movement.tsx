@@ -32,7 +32,7 @@ export default function Movement() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
             {MOVEMENT_PRINCIPLES.philosophy.map((item, i) => (
-              <div key={i} className="flex items-center space-x-3 text-[11px] uppercase tracking-widest font-black text-velora-text/40">
+              <div key={i} className="flex items-center space-x-3 text-[11px] uppercase tracking-widest font-black text-velora-muted">
                 <ShieldCheck size={16} className="text-velora-accent" />
                 <span>{item}</span>
               </div>
@@ -76,12 +76,12 @@ export default function Movement() {
                     {cat.name.includes('Cardio') && <Bike size={28} />}
                   </div>
                   <h3 className="text-2xl font-display font-bold mb-4 tracking-tight">{cat.name}</h3>
-                  <p className="text-[10px] text-velora-accent font-black uppercase tracking-widest mb-4 opacity-60">Impacto</p>
+                  <p className="text-[10px] text-velora-accent font-black uppercase tracking-widest mb-4">Impacto</p>
                   <p className="text-xs text-velora-muted italic leading-relaxed mb-8 font-medium">{cat.why}</p>
                   
                   <div className="pt-8 border-t border-velora-border">
-                    <p className="text-[10px] uppercase tracking-wider text-velora-text/30 font-black mb-3">Protocolo</p>
-                    <p className="text-[11px] leading-relaxed text-velora-text/50 font-bold">{cat.implementation}</p>
+                    <p className="text-[10px] uppercase tracking-wider text-velora-muted font-black mb-3">Protocolo</p>
+                    <p className="text-[11px] leading-relaxed text-velora-text font-bold">{cat.implementation}</p>
                   </div>
                 </div>
               </div>
@@ -95,7 +95,7 @@ export default function Movement() {
           <div className="bg-red-500/5 border border-red-500/10 rounded-[48px] p-16">
             <div className="flex items-center space-x-4 mb-12">
               <div className="w-12 h-12 bg-red-400/10 rounded-xl flex items-center justify-center">
-                <AlertTriangle className="text-red-400" size={28} />
+                <AlertTriangle className="text-red-500" size={28} />
               </div>
               <h2 className="text-3xl font-display font-black tracking-tight text-velora-text">Qué Limitar</h2>
             </div>
@@ -106,11 +106,11 @@ export default function Movement() {
                 </div>
               ))}
             </div>
-            <p className="mt-12 text-[10px] uppercase tracking-[0.2em] text-red-400 opacity-60 font-black">Nota: Escucha a tu cuerpo. Si un entrenamiento te hace sentir más pesada, modifícalo.</p>
+            <p className="mt-12 text-[10px] uppercase tracking-[0.2em] text-red-500 font-black">Nota: Escucha a tu cuerpo. Si un entrenamiento te hace sentir más pesada, modifícalo.</p>
           </div>
 
           {/* MICRO HABITS */}
-          <div className="bg-velora-accent rounded-[48px] p-16 text-velora-text relative overflow-hidden shadow-xl">
+          <div className="bg-velora-accent rounded-[48px] p-16 text-white relative overflow-hidden shadow-xl">
              <div className="absolute top-0 right-0 p-12 opacity-10">
               <Sparkles size={160} />
             </div>

@@ -13,10 +13,10 @@ export default function Home() {
     <div className="flex flex-col">
       {/* HERO SECTION */}
       <StrategySection {...HOMEPAGE_STRATEGY.hero}>
-        <div className="relative h-[85vh] flex items-center overflow-hidden bg-[#A2C4D9]">
+        <div className="relative h-[85vh] flex items-center overflow-hidden bg-[#D9EAF3]">
           {/* Background Image Overlay */}
           <div className="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#A2C4D9] via-[#A2C4D9]/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#D9EAF3] via-[#D9EAF3]/80 to-transparent" />
           
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
             <motion.div 

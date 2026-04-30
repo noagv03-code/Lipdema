@@ -399,5 +399,75 @@ export const LIPEDEMA_INFO = {
     headline: "Empieza a entender cómo apoyar tu cuerpo",
     buttonText: "Descubre el enfoque de alimentación y movimiento",
     link: "/nutrition"
+  },
+  diagnosis: {
+    title: "¿Cómo saber si tengo Lipedema?",
+    signals: [
+      "¿Hay desproporción entre la parte superior e inferior del cuerpo?",
+      "¿Tienes dolor, pesadez o sensibilidad al tacto en las piernas?",
+      "¿Te aparecen hematomas con facilidad?"
+    ],
+    content: "El lipedema presenta síntomas muy característicos, pero su diagnóstico sigue siendo clínico, ya que no existe una prueba de laboratorio que lo confirme de forma objetiva.",
+    specialistRole: [
+      "Evalúa signos y síntomas",
+      "Descarta otras patologías",
+      "Llega a un diagnóstico basado en observación y experiencia"
+    ],
+    associatedConditions: [
+      "Inflamación crónica de bajo grado",
+      "Alteraciones tiroideas",
+      "Problemas linfáticos y/o venosos"
+    ],
+    note: "Por eso, un diagnóstico adecuado debe ir más allá de observar las piernas y considerar el contexto completo de salud."
+  },
+  test: {
+    title: "¿Sospechas que podrías tener lipedema?",
+    subtitle: "Realiza este test orientativo para entender mejor tus síntomas.",
+    instructions: [
+      "Responde todas las preguntas",
+      "Selecciona “Sí” o “No”",
+      "Obtendrás un resultado orientativo al final"
+    ],
+    questions: [
+      "¿Es positivo el signo de Simarro? (dolor intenso al pellizcar profundamente debajo de la rodilla)",
+      "¿Notas desproporción entre las piernas y el resto del cuerpo?",
+      "¿Observas una forma tipo “borde de copa” sobre el tobillo?",
+      "¿Notas una “almohadilla” en la cara interna de la rodilla?",
+      "¿Tienes tendencia a ganar peso sin explicación y las piernas no responden a dietas?",
+      "¿Pierdes peso en el cuerpo pero no en las piernas al hacer dieta o ejercicio?",
+      "¿Notas nódulos bajo la piel (como pequeñas bolitas)?",
+      "¿El aumento de volumen afecta también al pie?",
+      "¿Sientes dolor o sensibilidad al tocar las piernas, incluso en reposo?",
+      "¿Tienes sensación de pesadez tras estar mucho tiempo de pie o sentada?",
+      "¿Notas dolor profundo o piernas cargadas sin motivo claro?",
+      "¿Te aparecen hematomas con facilidad?",
+      "¿Tienes varices o arañas vasculares?",
+      "¿Notas la piel más fría, pálida o difícil de broncear en las piernas?"
+    ],
+    results: [
+      { 
+        range: [0, 30], 
+        label: "Baja probabilidad", 
+        description: "Tus respuestas no muestran muchos signos característicos. Aun así, observa tu evolución y hábitos." 
+      },
+      { 
+        range: [31, 60], 
+        label: "Posible lipedema", 
+        description: "Existen varios indicios. Sería recomendable profundizar más y prestar atención a alimentación y movimiento." 
+      },
+      { 
+        range: [61, 100], 
+        label: "Alta probabilidad", 
+        description: "Tus respuestas coinciden con muchos síntomas de lipedema. Es recomendable consultar con un especialista." 
+      }
+    ],
+    disclaimer: "Este test es orientativo y no sustituye un diagnóstico médico profesional."
+  },
+  finalCta: {
+    headline: "Empieza a tomar el control de tu cuerpo hoy",
+    options: [
+      { text: "Descubrir el plan de alimentación y movimiento", link: "/nutrition" },
+      { text: "Acceder al programa completo", link: "/strategy" }
+    ]
   }
 };

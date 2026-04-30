@@ -8,9 +8,9 @@ export default function DailyPlans() {
   return (
     <div className="flex flex-col">
       {/* HERO SECTION */}
-      <section className="relative h-[60vh] flex items-center overflow-hidden bg-[#A2C4D9]">
+      <section className="relative h-[60vh] flex items-center overflow-hidden bg-[#D9EAF3]">
         <div className="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&q=80')] bg-cover bg-center" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#A2C4D9] via-[#A2C4D9]/80 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#D9EAF3] via-[#D9EAF3]/80 to-transparent" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <motion.div 

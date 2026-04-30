@@ -8,14 +8,14 @@
   
   --color-velora-bg: #D1E6F0;
   --color-velora-nav: #FFFFFF;
-  --color-velora-text: #2E4A66;
-  --color-velora-muted: #5D7E95;
-  --color-velora-accent: #A7D8F5; /* Light Blue */
-  --color-velora-accent-light: #CFEFFF;
+  --color-velora-text: #1B334B;
+  --color-velora-muted: #3B5771;
+  --color-velora-accent: #2E6A94; /* Darker blue for better contrast */
+  --color-velora-accent-light: #A7D8F5;
   --color-velora-teal: #7ED6C2;
   --color-velora-beige: #F4EDE4;
-  --color-velora-border: #E1E8F0;
-  --color-velora-blue-dark: #1A3044;
+  --color-velora-border: #DAE4EE;
+  --color-velora-blue-dark: #102131;
   --color-velora-blue-mid: #EBF5FF;
 }
 
