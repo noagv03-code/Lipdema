@@ -483,7 +483,9 @@ export default function LipedemaInfo() {
                 key={i}
                 onClick={() => navigate(option.link)}
                 className={`px-10 py-6 rounded-full font-black text-xs uppercase tracking-widest transition-all shadow-xl flex items-center justify-center space-x-3 group ${
-                  i === 0 
+                  option.text === "Hazte el test ahora"
+                  ? 'bg-purple-500 text-white hover:bg-purple-600'
+                  : i === 0 
                   ? 'bg-velora-accent text-white hover:bg-white hover:text-velora-accent' 
                   : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
                 }`}
