@@ -292,3 +292,112 @@ export const MOVEMENT_PRINCIPLES = {
     "Tonificación gradual sin inflamación"
   ]
 };
+
+export const LIPEDEMA_INFO = {
+  hero: {
+    headline: "Todo lo que necesitas saber sobre el Lipedema",
+    subheadline: "Una guía clara para entender tu cuerpo y tomar mejores decisiones.",
+    visual: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80"
+  },
+  definitions: {
+    title: "¿Qué es el Lipedema?",
+    description: "El lipedema es una enfermedad crónica que afecta principalmente a mujeres y se caracteriza por una acumulación anormal de grasa, generalmente en piernas y, en algunos casos, brazos.",
+    keyPoints: [
+      { title: "Distribución desproporcionada", content: "Afecta principalmente la parte inferior del cuerpo vs la superior." },
+      { title: "Resistencia a la dieta", content: "No responde fácilmente a la dieta convencional o al ejercicio intenso." },
+      { title: "Sensibilidad", content: "Puede generar dolor, pesadez o una gran sensibilidad al tacto." }
+    ],
+    importantNote: "No es lo mismo que obesidad ni retención de líquidos común."
+  },
+  gradesAndTypes: {
+    title: "Grados y Tipos",
+    grades: [
+      { title: "Grado 1", features: ["Piel lisa", "Tejido blando", "Apariencia leve"] },
+      { title: "Grado 2", features: ["Irregularidades en la piel (celulitis)", "Nódulos palpables bajo la piel"] },
+      { title: "Grado 3", features: ["Grandes acumulaciones de tejido", "Deformación visible de la extremidad"] }
+    ],
+    types: [
+      { id: "Tipo I", description: "Caderas y glúteos" },
+      { id: "Tipo II", description: "Desde caderas hasta las rodillas" },
+      { id: "Tipo III", description: "Desde caderas hasta los tobillos" },
+      { id: "Tipo IV", description: "Brazos (puede acompañar a otros tipos)" },
+      { id: "Tipo V", description: "Solo la parte inferior de las piernas" }
+    ]
+  },
+  symptoms: [
+    "Sensación de pesadez constante en piernas",
+    "Dolor al tacto o presión (incluso leve)",
+    "Hinchazón desproporcionada",
+    "Aparición muy fácil de hematomas",
+    "Fatiga muscular rápida en las piernas",
+    "Sensación de frío constante en extremidades"
+  ],
+  treatments: {
+    title: "Tratamientos y Manejo",
+    intro: "No existe una “cura única”, pero sí estrategias de manejo que mejoran drásticamente la calidad de vida.",
+    conservative: {
+      title: "Enfoque Conservador",
+      items: [
+        "Alimentación antiinflamatoria (baja en procesados)",
+        "Movimiento regular de bajo impacto",
+        "Compresión linfática (medias de tejido plano)",
+        "Drenaje linfático manual"
+      ]
+    },
+    medical: {
+      title: "Opciones Médicas",
+      items: [
+        "Seguimiento profesional especializado",
+        "Liposucción especializada (WAL/Tumescente) en casos seleccionados"
+      ]
+    },
+    goal: "El objetivo es mejorar la calidad de vida y reducir los síntomas dolorosos."
+  },
+  associated: [
+    "Linfedema (puede evolucionar a lipolinfedema)",
+    "Problemas circulatorios y venosos",
+    "Dolor crónico y sensibilidad",
+    "Fatiga crónica y pesadez"
+  ],
+  origin: {
+    title: "Origen y Causas",
+    points: [
+      "Fuerte componente hormonal (suele aparecer en pubertad, embarazo o menopausia)",
+      "Predisposición genética (ocurre frecuentemente en varias mujeres de la misma familia)",
+      "Factores inflamatorios y metabólicos"
+    ]
+  },
+  evolution: [
+    "Suele aparecer o empeorar durante cambios hormonales significativos.",
+    "Es una condición progresiva si no se gestiona adecuadamente.",
+    "Sin embargo, puede estabilizarse y mejorar los síntomas con hábitos adecuados."
+  ],
+  childhood: {
+    title: "Lipedema en la Juventud",
+    content: "Suele manifestarse durante la adolescencia. A menudo se confunde con 'sobrepeso infantil' o 'desarrollo normal', por lo que la detección temprana es crucial para evitar la progresión emocional y física."
+  },
+  differential: {
+    title: "Diagnóstico Diferencial",
+    intro: "Es fundamental diferenciar el Lipedema de otras condiciones para recibir el tratamiento correcto.",
+    comparisons: [
+      { condition: "Obesidad", difference: "Distribución armónica vs desproporcionada. Responde a dieta vs resistencia." },
+      { condition: "Linfedema", difference: "Asimétrico vs simétrico (el lipedema afecta ambas piernas). Afecta el pie vs el pie suele estar libre." },
+      { condition: "Retención de líquidos", difference: "Transitorio vs tejido adiposo persistente y doloroso." }
+    ],
+    keys: ["Dolor al tacto", "Distribución específica", "Resistencia a dieta convencional"]
+  },
+  studies: {
+    title: "Estudios e Investigación",
+    points: [
+      "El lipedema está siendo cada vez más investigado a nivel internacional.",
+      "Existe un mayor reconocimiento médico en los últimos años, aunque aún queda camino.",
+      "La falta de diagnóstico temprano sigue siendo el mayor obstáculo para las pacientes."
+    ],
+    message: "La educación es fundamental para mejorar el abordaje y la visibilidad de esta condición."
+  },
+  cta: {
+    headline: "Empieza a entender cómo apoyar tu cuerpo",
+    buttonText: "Descubre el enfoque de alimentación y movimiento",
+    link: "/nutrition"
+  }
+};

@@ -9,6 +9,7 @@ export default function Navigation() {
 
   const links = [
     { label: 'Inicio', path: '/' },
+    { label: '¿Qué es Lipedema?', path: '/lipedema-info' },
     { label: 'Nutrición', path: '/nutrition' },
     { label: 'Movimiento', path: '/movement' },
     { label: 'Planes Diarios', path: '/daily-plans' },

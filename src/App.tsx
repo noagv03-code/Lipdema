@@ -12,6 +12,7 @@ import Nutrition from './pages/Nutrition';
 import Movement from './pages/Movement';
 import StrategyDashboard from './pages/StrategyDashboard';
 import DailyPlans from './pages/DailyPlans';
+import LipedemaInfo from './pages/LipedemaInfo';
 import { motion, AnimatePresence } from 'motion/react';
 
 function PageTransition({ children }: { children: React.ReactNode }) {
@@ -42,6 +43,7 @@ export default function App() {
               <Route path="/" element={<Home />} />
               <Route path="/nutrition" element={<Nutrition />} />
               <Route path="/movement" element={<Movement />} />
+              <Route path="/lipedema-info" element={<LipedemaInfo />} />
               <Route path="/daily-plans" element={<DailyPlans />} />
               <Route path="/strategy" element={<StrategyDashboard />} />
             </Routes>
