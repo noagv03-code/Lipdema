@@ -292,28 +292,6 @@ export default function LipedemaTest() {
         </div>
       </section>
 
-      {/* FINAL CTA */}
-      <section className="py-24 bg-velora-blue-dark text-white text-center">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-5xl font-display font-black mb-12 text-white">{finalCta.headline}</h2>
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            {finalCta.options.map((option, i) => (
-               <button 
-                key={i}
-                onClick={() => navigate(option.link)}
-                className={`px-12 py-6 rounded-full font-black text-xs uppercase tracking-[0.2em] transition-all shadow-xl flex items-center justify-center space-x-3 group ${
-                  i === 0 
-                  ? 'bg-velora-accent text-white hover:bg-white hover:text-velora-accent' 
-                  : 'bg-white/10 text-white hover:bg-white/20 border border-white/20'
-                }`}
-              >
-                <span>{option.text}</span>
-                <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform" />
-              </button>
-             ))}
-          </div>
-        </div>
-      </section>
     </div>
   );
 }
