@@ -109,8 +109,8 @@ export default function LipedemaInfo() {
               className="relative rounded-[40px] overflow-hidden shadow-2xl h-[600px]"
             >
               <img 
-                src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80" 
-                alt="Consulta médica para lipedema"
+                src="https://images.unsplash.com/photo-1590439471364-192aa70c0b53?auto=format&fit=crop&q=80" 
+                alt="Representación realista de la silueta en el lipedema"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -224,7 +224,7 @@ export default function LipedemaInfo() {
             <div className="lg:w-1/2 grid grid-cols-2 gap-6">
               <div className="space-y-6 pt-12">
                  <div className="h-64 bg-velora-bg rounded-[40px] relative overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Molestias en las piernas" referrerPolicy="no-referrer" />
+                    <img src="https://images.unsplash.com/photo-1512677859289-868723902bbe?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Persona con molestias en las piernas" referrerPolicy="no-referrer" />
                  </div>
                  <div className="h-48 bg-velora-blue-dark rounded-[40px] flex items-center justify-center p-8 text-center text-white">
                     <p className="text-sm font-bold leading-relaxed">
@@ -239,7 +239,7 @@ export default function LipedemaInfo() {
                     </p>
                  </div>
                  <div className="h-64 bg-velora-bg rounded-[40px] relative overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1579154235828-ac31ef8f9656?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Exploración médica" referrerPolicy="no-referrer" />
+                    <img src="https://images.unsplash.com/photo-1583416410404-37bc5b2a0c6a?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Exploración médica de lipedema" referrerPolicy="no-referrer" />
                  </div>
               </div>
             </div>
