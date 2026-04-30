@@ -1,6 +1,6 @@
 
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'motion/react';
+import React from 'react';
+import { motion } from 'motion/react';
 import { useNavigate } from 'react-router-dom';
 import { 
   Info, 
@@ -15,10 +15,7 @@ import {
   ArrowRight,
   CheckCircle2,
   ShieldAlert,
-  Search,
-  ClipboardCheck,
-  Zap,
-  RotateCcw
+  Search
 } from 'lucide-react';
 import { LIPEDEMA_INFO } from '../constants';
 
@@ -37,33 +34,8 @@ export default function LipedemaInfo() {
     differential, 
     studies, 
     cta,
-    diagnosis,
-    test,
     finalCta 
   } = LIPEDEMA_INFO;
-
-  const [testAnswers, setTestAnswers] = useState<(boolean | null)[]>(new Array(test.questions.length).fill(null));
-  const [showResult, setShowResult] = useState(false);
-
-  const handleAnswer = (index: number, answer: boolean) => {
-    const newAnswers = [...testAnswers];
-    newAnswers[index] = answer;
-    setTestAnswers(newAnswers);
-  };
-
-  const calculateResult = () => {
-    const yesCount = testAnswers.filter(a => a === true).length;
-    const percentage = (yesCount / test.questions.length) * 100;
-    
-    return test.results.find(r => percentage >= r.range[0] && percentage <= r.range[1]) || test.results[0];
-  };
-
-  const resetTest = () => {
-    setTestAnswers(new Array(test.questions.length).fill(null));
-    setShowResult(false);
-  };
-
-  const isTestComplete = testAnswers.every(a => a !== null);
 
   return (
     <div className="flex flex-col">
@@ -298,7 +270,7 @@ export default function LipedemaInfo() {
                  <div className="w-10 h-10 bg-velora-accent rounded-xl flex items-center justify-center">
                     <History size={20} />
                  </div>
-                 <span>{treatments.conservative.title}</span>
+                 <span className="text-white">{treatments.conservative.title}</span>
                </h3>
                <ul className="space-y-6">
                  {treatments.conservative.items.map((item, i) => (
@@ -321,7 +293,7 @@ export default function LipedemaInfo() {
                  <div className="w-10 h-10 bg-white/20 rounded-xl flex items-center justify-center">
                     <Stethoscope size={20} />
                  </div>
-                 <span>{treatments.medical.title}</span>
+                 <span className="text-white">{treatments.medical.title}</span>
                </h3>
                <ul className="space-y-6">
                  {treatments.medical.items.map((item, i) => (
@@ -387,7 +359,7 @@ export default function LipedemaInfo() {
                >
                  <Baby size={120} className="absolute -bottom-10 -right-10 text-white/5 transform -rotate-12" />
                  <div className="relative z-10">
-                    <h2 className="text-3xl font-display font-black mb-8">{childhood.title}</h2>
+                    <h2 className="text-3xl font-display font-black mb-8 text-white">{childhood.title}</h2>
                     <p className="text-lg text-white/80 leading-relaxed font-medium">
                       {childhood.content}
                     </p>
@@ -494,180 +466,6 @@ export default function LipedemaInfo() {
                     Trabajamos para llevar la ciencia más reciente a tu día a día.
                  </p>
                </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* DIAGNOSIS SECTION */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row gap-16 items-start">
-            <div className="lg:w-1/2">
-              <div className="inline-flex items-center space-x-2 bg-velora-accent/10 px-4 py-2 rounded-full text-velora-accent mb-6 text-[#2E4A66]">
-                <Search size={18} />
-                <span className="text-xs font-black uppercase tracking-widest">Detección</span>
-              </div>
-              <h2 className="text-4xl md:text-5xl font-display font-black text-velora-text mb-8">
-                {diagnosis.title}
-              </h2>
-              
-              <div className="bg-velora-bg/30 p-8 rounded-[40px] mb-12">
-                <h4 className="text-sm font-black uppercase tracking-widest text-velora-accent mb-6">Señales clave</h4>
-                <div className="space-y-4">
-                  {diagnosis.signals.map((signal, i) => (
-                    <div key={i} className="flex items-start space-x-3">
-                      <div className="w-1.5 h-1.5 rounded-full bg-velora-accent shrink-0 mt-2" />
-                      <p className="font-bold text-velora-text leading-tight">{signal}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="prose prose-lg text-velora-muted font-medium mb-12">
-                <p>{diagnosis.content}</p>
-              </div>
-
-              <div className="grid md:grid-cols-2 gap-8">
-                <div className="space-y-4">
-                  <h4 className="text-xs font-black uppercase tracking-[0.2em] text-velora-blue-dark">El especialista:</h4>
-                  {diagnosis.specialistRole.map((role, i) => (
-                    <div key={i} className="flex items-center space-x-2 text-sm text-velora-muted">
-                      <CheckCircle2 size={16} className="text-velora-accent" />
-                      <span>{role}</span>
-                    </div>
-                  ))}
-                </div>
-                <div className="space-y-4">
-                  <h4 className="text-xs font-black uppercase tracking-[0.2em] text-velora-blue-dark">Condiciones asociadas:</h4>
-                  {diagnosis.associatedConditions.map((cond, i) => (
-                    <div key={i} className="flex items-center space-x-2 text-sm text-velora-muted">
-                      <div className="w-1 h-1 rounded-full bg-velora-muted/30" />
-                      <span>{cond}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              <div className="mt-12 p-6 border-l-4 border-velora-accent bg-velora-bg/10 italic text-velora-muted font-medium">
-                {diagnosis.note}
-              </div>
-            </div>
-
-            <div className="lg:w-1/2 w-full sticky top-24">
-              {/* TEST COMPONENT */}
-              <div id="test" className="bg-[#102131] rounded-[60px] p-10 md:p-16 text-white shadow-2xl relative overflow-hidden">
-                <div className="relative z-10">
-                  {!showResult ? (
-                    <>
-                      <div className="flex items-center justify-between mb-12">
-                        <div className="inline-flex items-center space-x-2 bg-white/10 px-4 py-2 rounded-full text-velora-accent">
-                          <ClipboardCheck size={18} />
-                          <span className="text-[10px] font-black uppercase tracking-widest text-white">Autoevaluación</span>
-                        </div>
-                        <div className="text-[10px] font-black uppercase tracking-widest text-white/40">
-                          Pregunta {testAnswers.filter(a => a !== null).length} de {test.questions.length}
-                        </div>
-                      </div>
-
-                      <h3 className="text-3xl font-display font-black mb-4">{test.title}</h3>
-                      <p className="text-white/60 text-sm mb-12">{test.subtitle}</p>
-
-                      <div className="space-y-8 max-h-[400px] overflow-y-auto pr-4 custom-scrollbar mb-12">
-                        {test.questions.map((q, i) => (
-                          <div key={i} className="space-y-4 pb-8 border-b border-white/10 last:border-0">
-                            <p className="text-lg font-medium leading-tight">{i + 1}. {q}</p>
-                            <div className="flex gap-4">
-                              <button 
-                                onClick={() => handleAnswer(i, true)}
-                                className={`flex-1 py-3 rounded-xl font-bold transition-all border-2 ${
-                                  testAnswers[i] === true 
-                                  ? 'bg-velora-accent border-velora-accent text-white shadow-lg shadow-velora-accent/20' 
-                                  : 'bg-white/5 border-white/10 hover:border-white/20'
-                                }`}
-                              >
-                                Sí
-                              </button>
-                              <button 
-                                onClick={() => handleAnswer(i, false)}
-                                className={`flex-1 py-3 rounded-xl font-bold transition-all border-2 ${
-                                  testAnswers[i] === false 
-                                  ? 'bg-white border-white text-velora-blue-dark shadow-lg shadow-white/10' 
-                                  : 'bg-white/5 border-white/10 hover:border-white/20'
-                                }`}
-                              >
-                                No
-                              </button>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-
-                      <div className="flex flex-col gap-6">
-                        <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                          <motion.div 
-                            className="h-full bg-velora-accent"
-                            initial={{ width: 0 }}
-                            animate={{ width: `${(testAnswers.filter(a => a !== null).length / test.questions.length) * 100}%` }}
-                          />
-                        </div>
-                        <button 
-                          disabled={!isTestComplete}
-                          onClick={() => setShowResult(true)}
-                          className={`w-full py-5 rounded-2xl font-black text-sm uppercase tracking-widest transition-all ${
-                            isTestComplete 
-                            ? 'bg-velora-accent text-white hover:bg-white hover:text-velora-accent shadow-xl active:scale-[0.98]' 
-                            : 'bg-white/5 text-white/20 cursor-not-allowed border border-white/10'
-                          }`}
-                        >
-                          Ver mi resultado
-                        </button>
-                      </div>
-                    </>
-                  ) : (
-                    <motion.div 
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      className="text-center py-8"
-                    >
-                      <div className="w-24 h-24 bg-velora-accent/20 rounded-full flex items-center justify-center mx-auto mb-10">
-                        <Zap className="text-velora-accent" size={48} />
-                      </div>
-                      <p className="text-velora-accent font-black uppercase tracking-[0.3em] text-xs mb-4">Tu Resultado</p>
-                      <h3 className="text-5xl font-display font-black mb-6">{calculateResult().label}</h3>
-                      <p className="text-xl text-white/70 mb-12 leading-relaxed max-w-sm mx-auto">
-                        {calculateResult().description}
-                      </p>
-                      
-                      <div className="bg-white/5 rounded-3xl p-6 mb-12 border border-white/10">
-                        <p className="text-sm text-white/50 italic">
-                          {test.disclaimer}
-                        </p>
-                      </div>
-
-                      <div className="flex flex-col gap-4">
-                        <button 
-                          onClick={() => navigate('/nutrition')}
-                          className="w-full bg-white text-velora-blue-dark py-5 rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-velora-accent hover:text-white transition-all flex items-center justify-center space-x-3"
-                        >
-                          <span>Empezar programa</span>
-                          <ArrowRight size={18} />
-                        </button>
-                        <button 
-                          onClick={resetTest}
-                          className="w-full border border-white/20 text-white/60 py-5 rounded-2xl font-bold text-xs uppercase tracking-widest hover:text-white transition-all flex items-center justify-center space-x-2"
-                        >
-                          <RotateCcw size={16} />
-                          <span>Repetir test</span>
-                        </button>
-                      </div>
-                    </motion.div>
-                  )}
-                </div>
-                {/* Decoration */}
-                <div className="absolute -top-24 -right-24 w-64 h-64 bg-velora-accent/10 rounded-full blur-[80px]" />
-                <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-white/5 rounded-full blur-[60px]" />
-              </div>
             </div>
           </div>
         </div>

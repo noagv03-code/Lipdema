@@ -13,7 +13,7 @@ export default function Navigation() {
     { label: 'Nutrición', path: '/nutrition' },
     { label: 'Movimiento', path: '/movement' },
     { label: 'Planes Diarios', path: '/daily-plans' },
-    { label: 'Guía de Estrategia', path: '/strategy', highlight: true }
+    { label: 'Test Autoevaluación', path: '/test', highlight: true }
   ];
 
   return (

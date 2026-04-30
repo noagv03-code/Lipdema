@@ -10,7 +10,7 @@ import Navigation from './components/Navigation';
 import Home from './pages/Home';
 import Nutrition from './pages/Nutrition';
 import Movement from './pages/Movement';
-import StrategyDashboard from './pages/StrategyDashboard';
+import LipedemaTest from './pages/LipedemaTest';
 import DailyPlans from './pages/DailyPlans';
 import LipedemaInfo from './pages/LipedemaInfo';
 import { motion, AnimatePresence } from 'motion/react';
@@ -45,7 +45,7 @@ export default function App() {
               <Route path="/movement" element={<Movement />} />
               <Route path="/lipedema-info" element={<LipedemaInfo />} />
               <Route path="/daily-plans" element={<DailyPlans />} />
-              <Route path="/strategy" element={<StrategyDashboard />} />
+              <Route path="/test" element={<LipedemaTest />} />
             </Routes>
           </PageTransition>
         </main>

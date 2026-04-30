@@ -117,8 +117,8 @@ export default function Nutrition() {
               <div className="space-y-12">
                 {NUTRITION_PHILOSOPHY.sampleMeals.slice(0, 2).map((step, i) => (
                   <div key={i} className="space-y-6">
-                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-white/60 flex items-center">
-                      <span className="w-10 h-px bg-white/20 mr-4"></span>
+                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-white/90 flex items-center">
+                      <span className="w-10 h-px bg-white/40 mr-4"></span>
                       Amanecer - {step.time}
                     </span>
                     <div className="space-y-4 pl-14">
@@ -132,8 +132,8 @@ export default function Nutrition() {
               <div className="space-y-12">
                 {NUTRITION_PHILOSOPHY.sampleMeals.slice(2).map((step, i) => (
                   <div key={i} className="space-y-6">
-                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-white/60 flex items-center">
-                      <span className="w-10 h-px bg-white/20 mr-4"></span>
+                    <span className="text-[12px] font-black uppercase tracking-[0.3em] text-white/90 flex items-center">
+                      <span className="w-10 h-px bg-white/40 mr-4"></span>
                       Atardecer - {step.time}
                     </span>
                     <div className="space-y-4 pl-14">
