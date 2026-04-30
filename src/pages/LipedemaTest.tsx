@@ -58,7 +58,7 @@ export default function LipedemaTest() {
               <ClipboardCheck size={18} />
               <span className="text-xs font-black uppercase tracking-widest text-white">Herramienta de Diagnóstico</span>
             </div>
-            <h1 className="text-5xl md:text-7xl font-display font-black mb-8 leading-tight tracking-tight">
+            <h1 className="text-5xl md:text-7xl font-display font-black mb-8 leading-tight tracking-tight text-white">
               {test.title}
             </h1>
             <p className="text-xl text-white/70 max-w-2xl mx-auto font-medium">

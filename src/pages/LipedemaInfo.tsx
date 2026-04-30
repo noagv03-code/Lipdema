@@ -160,7 +160,7 @@ export default function LipedemaInfo() {
           <div className="bg-velora-blue-dark rounded-[40px] p-12 text-white overflow-hidden relative">
             <div className="relative z-10 grid lg:grid-cols-2 gap-12 items-center">
               <div>
-                <h3 className="text-3xl font-display font-black mb-8">Tipos de Lipedema</h3>
+                <h3 className="text-3xl font-display font-black mb-8 text-white">Tipos de Lipedema</h3>
                 <div className="space-y-4">
                   {gradesAndTypes.types.map((type, i) => (
                     <div key={i} className="flex items-center space-x-6 p-4 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors">
@@ -474,7 +474,7 @@ export default function LipedemaInfo() {
       {/* FINAL CTA */}
       <section className="py-24 bg-velora-blue-dark relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10 text-white">
-          <h2 className="text-4xl md:text-6xl font-display font-black mb-12 leading-tight tracking-tight">
+          <h2 className="text-4xl md:text-6xl font-display font-black mb-12 leading-tight tracking-tight text-white">
             {finalCta.headline}
           </h2>
           <div className="flex flex-col md:flex-row justify-center gap-6">

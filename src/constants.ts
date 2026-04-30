@@ -489,7 +489,7 @@ export const LIPEDEMA_INFO = {
     headline: "Empieza a tomar el control de tu cuerpo hoy",
     options: [
       { text: "Descubrir el plan de alimentación y movimiento", link: "/nutrition" },
-      { text: "Acceder al programa completo", link: "/strategy" }
+      { text: "Hazte el test ahora", link: "/test" }
     ]
   }
 };

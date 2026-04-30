@@ -1,10 +1,12 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
+import { useNavigate } from 'react-router-dom';
 import { Coffee, Utensils, Moon, Apple, Activity, CheckCircle, ArrowRight } from 'lucide-react';
 import { DAILY_PLANS, DAILY_PLANS_STRATEGY } from '../constants';
 
 export default function DailyPlans() {
+  const navigate = useNavigate();
   return (
     <div className="flex flex-col">
       {/* HERO SECTION */}
@@ -162,8 +164,11 @@ export default function DailyPlans() {
             Obtén planes de 12 semanas, listas de compras dinámicas y guías de preparación de comidas en nuestro programa premium.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-             <button className="bg-velora-accent text-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white hover:text-velora-accent transition-all shadow-xl flex items-center space-x-3 group">
-              <span>Acceder al Programa Completo</span>
+             <button 
+              onClick={() => navigate('/test')}
+              className="bg-velora-accent text-white px-10 py-5 rounded-full font-black text-sm uppercase tracking-widest hover:bg-white hover:text-velora-accent transition-all shadow-xl flex items-center space-x-3 group"
+            >
+              <span>Hazte el test ahora</span>
               <ArrowRight className="group-hover:translate-x-2 transition-transform" />
             </button>
           </div>
