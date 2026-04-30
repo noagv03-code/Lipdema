@@ -41,7 +41,7 @@ export default function LipedemaInfo() {
     <div className="flex flex-col">
       {/* HERO SECTION */}
       <section className="relative h-[60vh] flex items-center overflow-hidden bg-[#D9EAF3]">
-        <div className="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80')] bg-cover bg-center" />
+        <div className="absolute inset-0 opacity-40 bg-[url('https://images.unsplash.com/photo-1576091160550-2173dad99901?auto=format&fit=crop&q=80')] bg-cover bg-center" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#D9EAF3] via-[#D9EAF3]/80 to-transparent" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -109,8 +109,8 @@ export default function LipedemaInfo() {
               className="relative rounded-[40px] overflow-hidden shadow-2xl h-[600px]"
             >
               <img 
-                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80" 
-                alt="Enfoque en salud y bienestar"
+                src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?auto=format&fit=crop&q=80" 
+                alt="Consulta médica para lipedema"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -224,7 +224,7 @@ export default function LipedemaInfo() {
             <div className="lg:w-1/2 grid grid-cols-2 gap-6">
               <div className="space-y-6 pt-12">
                  <div className="h-64 bg-velora-bg rounded-[40px] relative overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Lipedema support" referrerPolicy="no-referrer" />
+                    <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Molestias en las piernas" referrerPolicy="no-referrer" />
                  </div>
                  <div className="h-48 bg-velora-blue-dark rounded-[40px] flex items-center justify-center p-8 text-center text-white">
                     <p className="text-sm font-bold leading-relaxed">
@@ -239,7 +239,7 @@ export default function LipedemaInfo() {
                     </p>
                  </div>
                  <div className="h-64 bg-velora-bg rounded-[40px] relative overflow-hidden group">
-                    <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Lipedema awareness" referrerPolicy="no-referrer" />
+                    <img src="https://images.unsplash.com/photo-1579154235828-ac31ef8f9656?auto=format&fit=crop&q=80" className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700" alt="Exploración médica" referrerPolicy="no-referrer" />
                  </div>
               </div>
             </div>
