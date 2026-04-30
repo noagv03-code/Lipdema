@@ -134,7 +134,7 @@ export const DAILY_PLANS: DailyPlan[] = [
     snack: "Nueces",
     movement: "30 min caminata + 5 min estiramientos",
     benefit: "Alto en proteínas + favorece la saciedad y estabilidad energética",
-    image: "https://images.unsplash.com/photo-1556761108-03610996894c?auto=format&fit=crop&q=80"
+    image: "https://images.unsplash.com/photo-1603360946369-dc9bb6258143?auto=format&fit=crop&q=80"
   },
   {
     day: 12,

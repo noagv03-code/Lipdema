@@ -157,12 +157,6 @@ export default function DailyPlans() {
       {/* FINAL CTA */}
       <section className="py-24 bg-velora-blue-dark relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 text-center relative z-10 text-white">
-          <h2 className="text-4xl md:text-5xl font-display font-black mb-8 leading-tight tracking-tight">
-            ¿Quieres todo organizado para ti?
-          </h2>
-          <p className="text-xl text-white/70 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Obtén planes de 12 semanas, listas de compras dinámicas y guías de preparación de comidas en nuestro programa premium.
-          </p>
           <div className="flex flex-wrap justify-center gap-4">
              <button 
               onClick={() => navigate('/test')}
