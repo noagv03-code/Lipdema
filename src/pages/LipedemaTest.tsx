@@ -295,7 +295,7 @@ export default function LipedemaTest() {
       {/* FINAL CTA */}
       <section className="py-24 bg-velora-blue-dark text-white text-center">
         <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-5xl font-display font-black mb-12">{finalCta.headline}</h2>
+          <h2 className="text-5xl font-display font-black mb-12 text-white">{finalCta.headline}</h2>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
             {finalCta.options.map((option, i) => (
                <button 
