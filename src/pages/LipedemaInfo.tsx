@@ -137,8 +137,8 @@ export default function LipedemaInfo() {
               className="relative rounded-[40px] overflow-hidden shadow-2xl h-[600px]"
             >
               <img 
-                src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80" 
-                alt="Mujer real"
+                src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80" 
+                alt="Enfoque en salud y bienestar"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />

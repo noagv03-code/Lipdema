@@ -124,6 +124,28 @@ export const DAILY_PLANS: DailyPlan[] = [
     movement: "Caminata + movilidad",
     benefit: "Balance general",
     image: "https://images.unsplash.com/photo-1543339308-43e59d6b73a6?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 11,
+    focus: "Saciedad y Energía",
+    breakfast: "Huevos con aguacate",
+    lunch: "Ternera salteada con pimientos y calabacín",
+    dinner: "Pollo a la plancha con brócoli",
+    snack: "Nueces",
+    movement: "30 min caminata + 5 min estiramientos",
+    benefit: "Alto en proteínas + favorece la saciedad y estabilidad energética",
+    image: "https://images.unsplash.com/photo-1556761108-03610996894c?auto=format&fit=crop&q=80"
+  },
+  {
+    day: 12,
+    focus: "Antiinflamatorio Omega-3",
+    breakfast: "Yogur natural con semillas de chía",
+    lunch: "Caballa al horno con ensalada de pepino y aguacate",
+    dinner: "Merluza al vapor con espárragos",
+    snack: "Almendras",
+    movement: "20 min Rebounding",
+    benefit: "Alto contenido en omega-3 → ayuda a reducir inflamación",
+    image: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&q=80"
   }
 ];
 
